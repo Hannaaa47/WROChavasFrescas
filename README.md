@@ -103,8 +103,8 @@ Es un Single Board Microcontroller (SBM), es un sistema en chip (SoC) económico
 Su función en nuestro proyecto es hacer de motor controller y obtener lecturas precisas de los sensores, dada a la rápida comunicación que tiene entre componentes. Elegimos al Esp32 sobre la opción clásica que sería algún arduino, ya que después de analizar ambos llegamos a la conclusión que el Esp32 es mejor. 
 <table>
   <tr>
-    <td width="50%" style="text-align: center;">
-      <img src="./other/Foto componentes/ESP32.jpg" alt="ESP32" height=300px style="text-align: center;">
+    <td width="400px" style="text-align: center;">
+      <img src="./other/Foto componentes/ESP32.jpg" alt="ESP32" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
@@ -126,7 +126,7 @@ Hace la función del cerebro principal del robot, esta a cargo de la computer vi
 
 <table>
   <tr>
-    <td width="50%" style="text-align: center;">
+    <td width="400px" style="text-align: center;">
       <img src="./other/Foto componentes/raspberry 4 model b.jpg" alt="Raspberry pi" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
@@ -149,7 +149,7 @@ Usamos este servomotor para controlar la dirección del carro, decidimos usar es
 
 <table>
   <tr>
-    <td width="50%" style="text-align: center;">
+    <td width="400px" style="text-align: center;">
       <img src="./other/Foto componentes/Servomotor MG995 180.jpg" alt="Servomotor" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
