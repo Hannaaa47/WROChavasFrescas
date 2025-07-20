@@ -14,21 +14,21 @@ En este repositorio nuestro equipo las " Chavas frescas" desglosaremos como logr
 # Contenido del repositorio
 
   
-*  `models` — contiene los modelos 3D de nuestro robot.
+*  [`models`](models) — contiene los modelos 3D de nuestro robot.
 
-*  `schemes` — contiene el esquema de conexiones del robot y un diagrama de flujo del codigo.
+*  [`schemes`](schemes) — contiene el esquema de conexiones del robot y un diagrama de flujo del codigo.
 
-*  `src` — contiene el codigo de nuestro robot.
+*  [`src`](src) — contiene el codigo de nuestro robot.
 
 *  [`t-photos`](t-photos) — continene fotos de los integrantes del equipo.
 
-*  `v-photos` — contiene seis fotos del carrito.
+*  [`v-photos`](v-photos) — contiene seis fotos del carrito.
 
-*  `research` — una seccion dedicada a temas que investigamos en el proceso de crear el robot.
+*  [`research`](research) — una seccion dedicada a temas que investigamos en el proceso de crear el robot.
 
-*  `video` — contiene un archivo markdown con los links de los videos demostrativos de nuestro robot.
+*  [`video`](video) — contiene un archivo markdown con los links de los videos demostrativos de nuestro robot.
 
-*  `other` — contiene imagenes y archivos que ayudan a entender más a fondo como preparar el robot para la competencia, contiene datasheets y imagenes de los componentes.
+*  [`other`](other) — contiene imagenes y archivos que ayudan a entender más a fondo como preparar el robot para la competencia, contiene datasheets y imagenes de los componentes.
 
   
 
@@ -96,21 +96,22 @@ Los vídeos de rendimiento deben demostrar el rendimiento del vehículo de princ
 
   
 
-**Esp32-WROVER**
-Es un Single Board Microcontroller (SBM), es un sistema en chip (SoC) económico y de bajo consumo que combina funciones Wi-Fi y Bluetooth. Desde una perspectiva técnica, el ESP32 es un MCU de 32 bits con un microprocesador Tensilica Xtensa LX6, con una velocidad de reloj de hasta 240 MHz, 448 KB de ROM y 520 KB de SRAM. También incluye una amplia selección de periféricos, como un ADC de 10 bits, 6x PWM, I₂C, SPI, UART y más. La programación del ESP32 es relativamente sencilla, ya que admite diversos lenguajes de programación, como C/C++, ensamblador y Python. También es compatible con el IDE de Arduino, una popular plataforma de código abierto para la programación de microcontroladores.
+**Esp32-WROVER** 
 
-Su función en nuestro proyecto es hacer de motor controller y obtener lecturas precisas de los sensores, dada a la rápida comunicación que tiene entre componentes. Elegimos al Esp32 sobre la opción clásica que sería algún arduino, ya que después de analizar ambos llegamos a la conclusión que el esp32 es mejor. 
+Es un Single Board Microcontroller (SBM), es un sistema en chip (SoC) económico y de bajo consumo que combina funciones Wi-Fi y Bluetooth. Desde una perspectiva técnica, el ESP32 es un MCU de 32 bits con un microprocesador Tensilica Xtensa LX6, con una velocidad de reloj de hasta 240 MHz, 448 KB de ROM y 520 KB de SRAM. También incluye una amplia selección de periféricos, como un ADC de 10 bits, 6x PWM, I₂C, SPI, UART y más. La programación del ESP32 es relativamente sencilla, ya que admite diversos lenguajes de programación, como C/C++, ensamblador y Python. También es compatible con el IDE de Arduino, una popular plataforma de código abierto para la programación de microcontroladores. Para ver mas información puede ver el [datasheet](other/Datasheets/esp32-wrover_datasheet_en.pdf) y la descripción de los [pines GPIO](other/Datasheets/ESP32_Pinout_V3.0.png).
+
+Su función en nuestro proyecto es hacer de motor controller y obtener lecturas precisas de los sensores, dada a la rápida comunicación que tiene entre componentes. Elegimos al Esp32 sobre la opción clásica que sería algún arduino, ya que después de analizar ambos llegamos a la conclusión que el Esp32 es mejor. 
 <table>
   <tr>
-    <td width="20%" style="text-align: left;">
-      <img src="./other/Foto componentes/ESP32.jpg" alt="ESP32" width="100%">
+    <td width="50%" style="text-align: center;">
+      <img src="./other/Foto componentes/ESP32.jpg" alt="ESP32" height=300px>
     </td>
-    <td width="80%" style="text-align: left; vertical-align: center;">
+    <td width="50%" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
       <li>Voltaje: 2.3V ~ 3.6V</li>
       <li>Amperaje: 80mA ~ 250mA </li>
       <li>Peso: 6.8 gramos</li>
-      <li>Dimensiones: (18.00±0.10) mm × (31.40±0.10) mm × (3.30±0.10) mm</li>
+      <li>Dimensiones: 18 × 31.40 × 3.30mm</li>
       </li>
     </td>
   </tr>
@@ -119,10 +120,49 @@ Su función en nuestro proyecto es hacer de motor controller y obtener lecturas 
 
 **Raspberry Pi 4 Model B**
 
-  
+El Single-Board Computer (SBC), es un pequeño computador, consiste en una placa base que soporta distintos componentes de un ordenador, como un procesador ARM de hasta 1500 MHz, un chip gráfico y una memoria RAM de hasta 8 GB. Para ver más información consulte el [datasheet](other/Datasheets/raspberry-pi-4-product-brief.pdf).
+
+Hace la función del cerebro principal del robot, esta a cargo de la computer vision interpretando los datos de la camara, ademas toma las decisiones importantes.
+
+<table>
+  <tr>
+    <td width="50%" style="text-align: center;">
+      <img src="./other/Foto componentes/raspberry 4 model b.jpg" alt="Raspberry pi" height=300px>
+    </td>
+    <td width="50%" style="text-align: left; vertical-align: center;">
+      <h3>Especificaciones:</h3>
+      <li>Voltaje: 5V</li>
+      <li>Amperaje: 2500mA ~ 3000mA </li>
+      <li>Peso: 46 gramos</li>
+      <li>Dimensiones: 88 × 58 × 19.5 mm</li> 
+      </li>
+    </td>
+  </tr>
+</table>
+
 
 **Servomotor MG995 180°**
 
+Un servomotor es un tipo de motor que permite controlar con precisión la posición, velocidad y aceleración de su eje. A diferencia de un motor eléctrico convencional, un servomotor utiliza un sistema de retroalimentación (como un encoder) para monitorear y corregir continuamente su movimiento, logrando un control más exacto. 
+
+Usamos este servomotor para controlar la dirección del carro, decidimos usar este modelo de servomotor devido a su gran torque. Para más información consulte el [datasheet](other/Datasheets/Servomotor_MG995_datasheet.pdf).
+
+<table>
+  <tr>
+    <td width="50%" style="text-align: center;">
+      <img src="./other/Foto componentes/Servomotor MG995 180.jpg" alt="Servomotor" height=300px>
+    </td>
+    <td width="50%" style="text-align: left; vertical-align: center;">
+      <h3>Especificaciones:</h3>
+      <li>Voltaje:  4.8V - 7.2V</li>
+      <li>Amperaje: 200mA ~ 1200mA </li>
+      <li>Torque: 9.4kg/cm (4.8V) - 11kg/cm (6V)</li>
+      <li>Peso: 66 gramos</li>
+      <li>Dimensiones: 40 x 20 x 43 mm</li> 
+      </li>
+    </td>
+  </tr>
+</table>
   
 
 **Motor JGB37-520 DC 12v 178rpm con encoder**
