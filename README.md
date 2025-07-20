@@ -117,6 +117,7 @@ Su función en nuestro proyecto es hacer de motor controller y obtener lecturas 
   </tr>
 </table>
 
+<br>
 
 **Raspberry Pi 4 Model B**
 
@@ -140,6 +141,7 @@ Hace la función del cerebro principal del robot, esta a cargo de la computer vi
   </tr>
 </table>
 
+<br>
 
 **Servomotor MG995 180°**
 
@@ -164,18 +166,80 @@ Usamos este servomotor para controlar la dirección del carro, decidimos usar es
   </tr>
 </table>
   
+<br>
 
-**Motor JGB37-520 DC 12v 178rpm con encoder**
+**Motor JGB37-520 DC 12v con encoder**
 
+Elegimos un motor de corriente continua, debido a su facilidad para usarlo. Estos motores toman la energía eléctrica mediante corriente continua y la convierten en rotación mecánica. Despues de calcular el [torque](/research/README.md) concluimos que ibamos a necesitar un motor con un buen torque para poder mover el robot. 
+
+Este motor tambien cuenta con un encoder, el encoder nos ayuda a monitorear las el moviemiento del motor, gracias a el pudimos implementar un sistema [PID](/research/README.md) para corregir las variaciones de la energia y contar un moviemiento consistente. Si quieres saber un poco más del motor revisa esta [imagen](other/Datasheets/motor.webp).
+
+<table>
+  <tr>
+    <td width="400px" style="text-align: center;">
+      <img src="./other/Foto componentes/Motor.jpg" alt="Motor" height=300px>
+    </td>
+    <td width="500px" style="text-align: left; vertical-align: center;">
+      <h3>Especificaciones:</h3>
+      <li>Voltaje:  12V</li>
+      <li>Amperaje: 120mA ~ 2300mA </li>
+      <li>Torque: 6.5kg.cm (120mA) - 9kg.cm (2300mA)</li>
+      <li>RPM: 178rpm</li>
+      <li>Peso: 170 gramos</li>
+      <li>Dimensiones: 63 x 37 x 33 mm</li> 
+      </li>
+    </td>
+  </tr>
+</table>
   
+<br>
 
 **Motor driver TB6612FNG**
 
+Un motor driver nos ayuda a controlar mas facilmente el motor con un voltaje más alto, controlando la velocidad y el sentido de giro. 
+
+El driver para motores TB6612FNG posee dos puentes H, puede controlar hasta dos motores de DC con una corriente costante de 1.2A (3.2A pico). Dos señales de entrada (IN1 y IN2) pueden ser usadas para controlar el motor en uno de cuatro modos posibles: CW(giro en sentido de las manecillas del reloj), CCW (en contra de las manecillas), short-brake y stop. Las dos salidas de motores (A y B) pueden ser controladas de manera separada, la velocidad de cada motor es controlada mediante una señal PWM con una frecuencia de hasta 100kHz. El pin STBY cuando es puesto en HIGH coloca al motor en modo de standby. El driver posee diodos internos de protección.
+Elegimos este motor driver debido a su gran eficiencia energética, su tamaño compacto, genera menos calor y su control preciso. Para saber más sobre este componente revise su [datasheet](other/Datasheets/TB6612FNG.pdf).
+
+<table>
+  <tr>
+    <td width="400px" style="text-align: center;">
+      <img src="./other/Foto componentes/Motor driver TB6612FNG.jpg" alt="Motor driver" height=300px>
+    </td>
+    <td width="500px" style="text-align: left; vertical-align: center;">
+      <h3>Especificaciones:</h3>
+      <li>Voltaje lógico (VCC): 2.7V - 5.5V</li>
+      <li>Voltaje de motor (VM): 4.5V - 13.5V</li>
+      <li>Corriente máxima por motor: 1.2A continuos / 3.2A pico</li>
+      </li>
+    </td>
+  </tr>
+</table>
   
+<br>
 
 **Cámara OV5647**
 
+camara, para que la usamos, a que se conecta
+
+[datasheet](other/Datasheets/ov5647_full.pdf)
   
+<table>
+  <tr>
+    <td width="400px" style="text-align: center;">
+      <img src="./other/Foto componentes/Cámara OV5647.jpg" alt="Camara" height=300px>
+    </td>
+    <td width="500px" style="text-align: left; vertical-align: center;">
+      <h3>Especificaciones:</h3>
+      <li>Voltaje lógico (VCC): 2.7V - 5.5V</li>
+      <li>Voltaje de motor (VM): 4.5V - 13.5V</li>
+      <li>Corriente máxima por motor: 1.2A continuos / 3.2A pico</li>
+      </li>
+    </td>
+  </tr>
+</table>
+  
+<br>
 
 **Sensor Ultrasónico HC-SR04**
 
@@ -210,7 +274,7 @@ Usamos este servomotor para controlar la dirección del carro, decidimos usar es
 
 | Servomotor MG995 180° | | | |
 
-| Motor JGB37-520 DC 12v 178rpm con encoder | | | |
+| Motor JGB37-520 DC 12v con encoder | | | |
 
 | Motor driver TB6612FNG | | | |
 
