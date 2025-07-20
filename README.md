@@ -106,7 +106,7 @@ Su función en nuestro proyecto es hacer de motor controller y obtener lecturas 
     <td width="50%" style="text-align: center;">
       <img src="./other/Foto componentes/ESP32.jpg" alt="ESP32" height=300px>
     </td>
-    <td width="400px" style="text-align: left; vertical-align: center;">
+    <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
       <li>Voltaje: 2.3V ~ 3.6V</li>
       <li>Amperaje: 80mA ~ 250mA </li>
@@ -129,7 +129,7 @@ Hace la función del cerebro principal del robot, esta a cargo de la computer vi
     <td width="50%" style="text-align: center;">
       <img src="./other/Foto componentes/raspberry 4 model b.jpg" alt="Raspberry pi" height=300px>
     </td>
-    <td width="400px" style="text-align: left; vertical-align: center;">
+    <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
       <li>Voltaje: 5V</li>
       <li>Amperaje: 2500mA ~ 3000mA </li>
@@ -152,7 +152,7 @@ Usamos este servomotor para controlar la dirección del carro, decidimos usar es
     <td width="50%" style="text-align: center;">
       <img src="./other/Foto componentes/Servomotor MG995 180.jpg" alt="Servomotor" height=300px>
     </td>
-    <td width="400px" style="text-align: left; vertical-align: center;">
+    <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
       <li>Voltaje:  4.8V - 7.2V</li>
       <li>Amperaje: 200mA ~ 1200mA </li>
