@@ -104,7 +104,7 @@ Su función en nuestro proyecto es hacer de motor controller y obtener lecturas 
 <table>
   <tr>
     <td width="50%" style="text-align: center;">
-      <img src="./other/Foto componentes/ESP32.jpg" alt="ESP32" height=300px>
+      <img src="./other/Foto componentes/ESP32.jpg" alt="ESP32" height=300px style="text-align: center;">
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
