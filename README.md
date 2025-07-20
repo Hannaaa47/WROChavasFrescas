@@ -101,18 +101,22 @@ Los vídeos de rendimiento deben demostrar el rendimiento del vehículo de princ
 Es un Single Board Microcontroller (SBM), es un sistema en chip (SoC) económico y de bajo consumo que combina funciones Wi-Fi y Bluetooth. Desde una perspectiva técnica, el ESP32 es un MCU de 32 bits con un microprocesador Tensilica Xtensa LX6, con una velocidad de reloj de hasta 240 MHz, 448 KB de ROM y 520 KB de SRAM. También incluye una amplia selección de periféricos, como un ADC de 10 bits, 6x PWM, I₂C, SPI, UART y más. La programación del ESP32 es relativamente sencilla, ya que admite diversos lenguajes de programación, como C/C++, ensamblador y Python. También es compatible con el IDE de Arduino, una popular plataforma de código abierto para la programación de microcontroladores. Para ver mas información puede ver el [datasheet](other/Datasheets/esp32-wrover_datasheet_en.pdf) y la descripción de los [pines GPIO](other/Datasheets/ESP32_Pinout_V3.0.png).
 
 Su función en nuestro proyecto es hacer de motor controller y obtener lecturas precisas de los sensores, dada a la rápida comunicación que tiene entre componentes. Elegimos al Esp32 sobre la opción clásica que sería algún arduino, ya que después de analizar ambos llegamos a la conclusión que el Esp32 es mejor. 
-<table>
+<table style="width: 100%; border-collapse: collapse;">
   <tr>
-    <td width="50%" style="text-align: center;">
-      <img src="./other/Foto componentes/ESP32.jpg" alt="ESP32" height=300px>
+    <td width="40%" style="text-align: center; vertical-align: middle; padding: 10px;">
+      <img 
+        src="./other/Foto componentes/ESP32.jpg" alt="ESP32" 
+        style="max-height: 300px; width: auto; object-fit: contain; border-radius: 8px;"
+      >
     </td>
-    <td width="50%" style="text-align: left; vertical-align: center;">
-      <h3>Especificaciones:</h3>
-      <li>Voltaje: 2.3V ~ 3.6V</li>
-      <li>Amperaje: 80mA ~ 250mA </li>
-      <li>Peso: 6.8 gramos</li>
-      <li>Dimensiones: 18 × 31.40 × 3.30mm</li>
-      </li>
+    <td width="60%" style="vertical-align: middle; padding: 10px;">
+      <h3 style="margin-top: 0;">Especificaciones:</h3>
+      <ul style="margin-bottom: 0; padding-left: 20px;">
+        <li>Voltaje: 2.3V ~ 3.6V</li>
+        <li>Amperaje: 80mA ~ 250mA</li>
+        <li>Peso: 6.8 gramos</li>
+        <li>Dimensiones: 18 × 31.40 × 3.30mm</li>
+      </ul>
     </td>
   </tr>
 </table>
@@ -124,18 +128,22 @@ El Single-Board Computer (SBC), es un pequeño computador, consiste en una placa
 
 Hace la función del cerebro principal del robot, esta a cargo de la computer vision interpretando los datos de la camara, ademas toma las decisiones importantes.
 
-<table>
+<table style="width: 100%; border-collapse: collapse;">
   <tr>
-    <td width="50%" style="text-align: center;">
-      <img src="./other/Foto componentes/raspberry 4 model b.jpg" alt="Raspberry pi" height=300px>
+    <td width="40%" style="text-align: center; vertical-align: middle; padding: 10px;">
+      <img 
+        src="./other/Foto componentes/raspberry 4 model b.jpg" alt="Raspberry pi"
+        style="max-height: 300px; width: auto; object-fit: contain; border-radius: 8px;"
+      >
     </td>
-    <td width="50%" style="text-align: left; vertical-align: center;">
-      <h3>Especificaciones:</h3>
-      <li>Voltaje: 5V</li>
-      <li>Amperaje: 2500mA ~ 3000mA </li>
-      <li>Peso: 46 gramos</li>
-      <li>Dimensiones: 88 × 58 × 19.5 mm</li> 
-      </li>
+    <td width="60%" style="vertical-align: middle; padding: 10px;">
+      <h3 style="margin-top: 0;">Especificaciones:</h3>
+      <ul style="margin-bottom: 0; padding-left: 20px;">
+        <li>Voltaje: 5V</li>
+        <li>Amperaje: 2500mA ~ 3000mA </li>
+        <li>Peso: 46 gramos</li>
+        <li>Dimensiones: 88 × 58 × 19.5 mm</li> 
+      </ul>
     </td>
   </tr>
 </table>
@@ -147,19 +155,23 @@ Un servomotor es un tipo de motor que permite controlar con precisión la posici
 
 Usamos este servomotor para controlar la dirección del carro, decidimos usar este modelo de servomotor devido a su gran torque. Para más información consulte el [datasheet](other/Datasheets/Servomotor_MG995_datasheet.pdf).
 
-<table>
+<table style="width: 100%; border-collapse: collapse;">
   <tr>
-    <td width="50%" style="text-align: center;">
-      <img src="./other/Foto componentes/Servomotor MG995 180.jpg" alt="Servomotor" height=300px>
+    <td width="40%" style="text-align: center; vertical-align: middle; padding: 10px;">
+      <img 
+        src="./other/Foto componentes/Servomotor MG995 180.jpg" alt="Servomotor"
+        style="max-height: 300px; width: auto; object-fit: contain; border-radius: 8px;"
+      >
     </td>
-    <td width="50%" style="text-align: left; vertical-align: center;">
-      <h3>Especificaciones:</h3>
-      <li>Voltaje:  4.8V - 7.2V</li>
-      <li>Amperaje: 200mA ~ 1200mA </li>
-      <li>Torque: 9.4kg/cm (4.8V) - 11kg/cm (6V)</li>
-      <li>Peso: 66 gramos</li>
-      <li>Dimensiones: 40 x 20 x 43 mm</li> 
-      </li>
+    <td width="60%" style="vertical-align: middle; padding: 10px;">
+      <h3 style="margin-top: 0;">Especificaciones:</h3>
+      <ul style="margin-bottom: 0; padding-left: 20px;">
+        <li>Voltaje:  4.8V - 7.2V</li>
+        <li>Amperaje: 200mA ~ 1200mA </li>
+        <li>Torque: 9.4kg/cm (4.8V) - 11kg/cm (6V)</li>
+        <li>Peso: 66 gramos</li>
+        <li>Dimensiones: 40 x 20 x 43 mm</li> 
+      </ul>
     </td>
   </tr>
 </table>
