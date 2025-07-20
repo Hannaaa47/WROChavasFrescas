@@ -1,7 +1,9 @@
+<div align="center">
 
 # **Chavas frescas**
 
-![team logo](/other/img/logo provisional.png)
+<img src="./other/img/logo provisional.png" alt="banner" height="400px" align="center">
+</div> <br>
 
 [![Website](https://img.shields.io/badge/Website-Visit-brightgreen?style=for-the-badge&logo=web&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Youtube](https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=Youtube&logoColor=white)](https://www.instagram.com/yonatanmt1/)
 
@@ -12,14 +14,13 @@ En este repositorio nuestro equipo las " Chavas frescas" desglosaremos como logr
 # Contenido del repositorio
 
   
-
 *  `models` — contiene los modelos 3D de nuestro robot.
 
 *  `schemes` — contiene el esquema de conexiones del robot y un diagrama de flujo del codigo.
 
 *  `src` — contiene el codigo de nuestro robot.
 
-*  `t-photos` — continene fotos de los integrantes del equipo.
+*  [`t-photos`](t-photos) — continene fotos de los integrantes del equipo.
 
 *  `v-photos` — contiene seis fotos del carrito.
 
@@ -101,10 +102,10 @@ Es un Single Board Microcontroller (SBM), es un sistema en chip (SoC) económico
 Su función en nuestro proyecto es hacer de motor controller y obtener lecturas precisas de los sensores, dada a la rápida comunicación que tiene entre componentes. Elegimos al Esp32 sobre la opción clásica que sería algún arduino, ya que después de analizar ambos llegamos a la conclusión que el esp32 es mejor. 
 <table>
   <tr>
-    <td width="50%" style="text-align: left;">
-      <img src="/other/Foto componentes/ESP32.jpg" alt="ESP32" width="100%">
+    <td width="20%" style="text-align: left;">
+      <img src="./other/Foto componentes/ESP32.jpg" alt="ESP32" width="100%">
     </td>
-    <td width="50%" style="text-align: left; vertical-align: top;">
+    <td width="80%" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
       <li>Voltaje: 2.3V ~ 3.6V</li>
       <li>Amperaje: 80mA ~ 250mA </li>
