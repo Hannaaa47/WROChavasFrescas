@@ -1,4 +1,7 @@
 # Investigaciones 
 
  - PID
- - Steering system
+ - Steering system (ackerman geometry) / kinematics? 
+ - Calcular torque para el servo 
+ - Calcular torque para el motor 
+ 
