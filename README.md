@@ -3,7 +3,9 @@
 # **Chavas frescas**
 
 <img src="./other/img/logo provisional.png" alt="banner" height="400px" align="center">
-</div> <br>
+</div> 
+
+<br>
 
 [![Website](https://img.shields.io/badge/Website-Visit-brightgreen?style=for-the-badge&logo=web&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Youtube](https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=Youtube&logoColor=white)](https://www.instagram.com/yonatanmt1/)
 
@@ -196,7 +198,7 @@ Este motor tambien cuenta con un encoder, el encoder nos ayuda a monitorear las 
 
 **Motor driver TB6612FNG**
 
-Un motor driver nos ayuda a controlar mas facilmente el motor con un voltaje más alto, controlando la velocidad y el sentido de giro. 
+Un motor driver nos ayuda a controlar el motor con un voltaje más alto, controlando la velocidad y el sentido de giro. 
 
 El driver para motores TB6612FNG posee dos puentes H, puede controlar hasta dos motores de DC con una corriente costante de 1.2A (3.2A pico). Dos señales de entrada (IN1 y IN2) pueden ser usadas para controlar el motor en uno de cuatro modos posibles: CW(giro en sentido de las manecillas del reloj), CCW (en contra de las manecillas), short-brake y stop. Las dos salidas de motores (A y B) pueden ser controladas de manera separada, la velocidad de cada motor es controlada mediante una señal PWM con una frecuencia de hasta 100kHz. El pin STBY cuando es puesto en HIGH coloca al motor en modo de standby. El driver posee diodos internos de protección.
 Elegimos este motor driver debido a su gran eficiencia energética, su tamaño compacto, genera menos calor y su control preciso. Para saber más sobre este componente revise su [datasheet](other/Datasheets/TB6612FNG.pdf).
@@ -211,6 +213,8 @@ Elegimos este motor driver debido a su gran eficiencia energética, su tamaño c
       <li>Voltaje lógico (VCC): 2.7V - 5.5V</li>
       <li>Voltaje de motor (VM): 4.5V - 13.5V</li>
       <li>Corriente máxima por motor: 1.2A continuos / 3.2A pico</li>
+      <li>Peso: 5 gramos</li>
+      <li>Dimensiones: 20 x 15 mm</li> 
       </li>
     </td>
   </tr>
@@ -220,9 +224,7 @@ Elegimos este motor driver debido a su gran eficiencia energética, su tamaño c
 
 **Cámara OV5647**
 
-camara, para que la usamos, a que se conecta
-
-[datasheet](other/Datasheets/ov5647_full.pdf)
+Usamos una mini cámara gran angular, esta se conecta directamente al raspberry. Para conocer mas detalles de la cámara puede ver el [datasheet](other/Datasheets/ov5647_full.pdf).
   
 <table>
   <tr>
@@ -231,9 +233,10 @@ camara, para que la usamos, a que se conecta
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
-      <li>Voltaje lógico (VCC): 2.7V - 5.5V</li>
-      <li>Voltaje de motor (VM): 4.5V - 13.5V</li>
-      <li>Corriente máxima por motor: 1.2A continuos / 3.2A pico</li>
+      <li>Video: 1080p a 30fps</li>
+      <li>Campo de visión: 2.0 x 1.33 m a 2 m</li>
+      <li>Peso: 11g</li>
+      <li>Dimensiones: 25 x 24 mm</li>
       </li>
     </td>
   </tr>
@@ -243,30 +246,126 @@ camara, para que la usamos, a que se conecta
 
 **Sensor Ultrasónico HC-SR04**
 
+Los sensores de ultrasonidos o sensores ultrasónicos son detectores de proximidad que trabajan libres de roces mecánicos y que detectan objetos a distancias que van desde pocos centímetros hasta varios metros. El sensor emite una onda y mide el tiempo que la señal tarda en regresar. Más detalles en el [datasheet](other/Datasheets/HC-SR04-Ultrasonic.pdf).
+En otras palabras el sensor ultrasónico nos permite saber con precision a que distancia se encuentran las paredes. 
+
+<table>
+  <tr>
+    <td width="400px" style="text-align: center;">
+      <img src="./other/Foto componentes//Sensor Ultrasonico.jpg" alt="Sensor ultrasonico" height=300px>
+    </td>
+    <td width="500px" style="text-align: left; vertical-align: center;">
+      <h3>Especificaciones:</h3>
+      <li>Voltaje: 3.3V ~ 5V</li>
+      <li>Amperaje: 15mA </li>
+      <li>Rango: 2cm ~ 400cm </li>
+      <li>Peso: 12 gramos</li>
+      <li>Dimensiones: 45 x 20 x 15mm</li> 
+      </li>
+    </td>
+  </tr>
+</table>
+  
+<br>
   
 
 **IMU MPU6050 6 Grados de libertad**
 
-  
+El MPU6050 es una unidad de medición inercial o IMU (Inertial Measurment Units) de 6 grados de libertad (DoF) que combina un acelerómetro de 3 ejes y un giroscopio de 3 ejes en un solo chip. Es ampliamente utilizado para medir la aceleración, la velocidad angular y la orientación de un objeto en movimiento. Nos ayuda a ubicarnos en el campo. Para más información revise el [datasheet](other/Datasheets/MPU-6000-Register-Map1.pdf).
 
+<table>
+  <tr>
+    <td width="400px" style="text-align: center;">
+      <img src="./other/Foto componentes/IMU.jpg" alt="IMU" height=300px>
+    </td>
+    <td width="500px" style="text-align: left; vertical-align: center;">
+      <h3>Especificaciones:</h3>
+      <li>Voltaje: 3.3V ~ 5V</li>
+      <li>Amperaje: 3.9mA  </li>
+      <li>Peso: 10 gramos</li>
+      <li>Dimensiones: 15.24 × 15.24 mm</li> 
+      </li>
+    </td>
+  </tr>
+</table>
+  
+<br>
+ 
 **Baterías 18650 3.7v 3000 mAh**
 
+La pila 18650 es una batería recargable Li-ion, que se parece mucho a la pila tipo AA convencional. Para este proyecto usamos 3 baterias 18650 de 3.7V en serie para obtener un voltaje total de 11.1V.
+
+<table>
+  <tr>
+    <td width="400px" style="text-align: center;">
+      <img src="./other/Foto componentes/Baterias 18650.jpg" alt="Baterias" height=300px>
+    </td>
+    <td width="500px" style="text-align: left; vertical-align: center;">
+      <h3>Especificaciones:</h3>
+      <li>Voltaje: 3.7V</li>
+      <li>Amperaje: 3000mA  </li>
+      <li>Peso: 50 gramos</li>
+      <li>Dimensiones: 18 × 65 mm</li> 
+      </li>
+    </td>
+  </tr>
+</table>
+  
+<br>
   
 
 **BMS FTVOGUE 3S 12V**
 
+Un BMS, o Sistema de Gestión de Baterías (por sus siglas en inglés, Battery Management System), es un sistema electrónico que se encarga de proteger y gestionar el funcionamiento de una batería. Usamos este componente para asegurarnos que nuestras pilas funcionen correctamente. Puede consultar esta [imagen](other/Foto%20componentes/bms%20detalles.jpg) para ver su configuración con las baterías.
+
+<table>
+  <tr>
+    <td width="400px" style="text-align: center;">
+      <img src="./other/Foto componentes/bms.jpg" alt="bms" height=300px>
+    </td>
+    <td width="500px" style="text-align: left; vertical-align: center;">
+      <h3>Especificaciones:</h3>
+      <li>Voltaje por celda: 3.7V</li>
+      <li>Voltaje nominal: 11.1V</li>
+      <li>Amperaje: 1000mAh–5000mAh </li>
+      <li>Ciclos de vida: 300–500 ciclos </li>
+      <li>Peso: 80 gramos</li>
+      <li>Dimensiones: 10 × 10 x 10 mm</li> 
+      </li>
+    </td>
+  </tr>
+</table>
   
+<br>
 
 **LM2596 Regulador Step Down 25W 3A**
 
+El regulador Step Down, conocido también como Buck, es un dispositivo electrónico de alta frecuencia que realiza una conversión descendente de voltaje de entrada, permitiendo transformar voltajes en un rango de 4.5V a 28V a un rango más bajo de 0.8V a 20V. Con capacidad para regular hasta 3A de corriente. Este componente nos permite alimentar de manera segura elementos que ocupan menos potencia. Para mas información consulte el [datasheet](other/Datasheets/MP1584_r1.0-779241.pdf).
+
+<table>
+  <tr>
+    <td width="400px" style="text-align: center;">
+      <img src="./other/Foto componentes/step down.jpg" alt="step down" height=300px>
+    </td>
+    <td width="500px" style="text-align: left; vertical-align: center;">
+      <h3>Especificaciones:</h3>
+      <li>Voltaje de entrada: 4.5V-28V</li>
+      <li>Voltaje de salida: 0.8V-20V </li>
+      <li>Corriente de salida máxima: 3A</li>
+      <li>Peso: 3 gramos</li>
+      <li>Dimensiones: 22 x 17 x 4 mm</li> 
+      </li>
+    </td>
+  </tr>
+</table>
   
-  
+<br>
 
 ## Reporte de costos
 
 |Nombre| Cantidad | Costo por unidad | Costo total |
 
-|--|--| -- | -- |
+|--   |--         | --              | --          | 
 
 | Esp32-WROVER | | | |
 
@@ -289,6 +388,8 @@ camara, para que la usamos, a que se conecta
 | BMS FTVOGUE 3S 12V | | | |
 
 | LM2596 Regulador Step Down 25W 3A | | | |
+
+
 
 otras cosas ...
 
