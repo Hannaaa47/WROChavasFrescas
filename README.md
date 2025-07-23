@@ -20,19 +20,15 @@ En este repositorio nuestro equipo las " Chavas frescas" desglosaremos como logr
 * **[Videos del robot](#videos-del-robot)**
 * **[Hardware](#hardware)**
   * [Reporte de costos](#reporte-de-costos)
-
   * [Mobility Management](#mobility-management)
     * [Chassis](#chassis) //
     * [Design](#design) //
     * [Motors](#motors) // ?
-
   * [Power and Sense Management](#power-and-sense-management)
     * [Power and Wiring](#power-and-wiring) //
     * [Sensors](#sensors) //
     * [Schematic](#schematic) //
-
 * **[Software](#software)**
-
   * [Initialization and Connection Process](#-initialization-and-connection-process-) //
   * [Object Management](#object-management)
     *  [Object Detection](#object-detection--open-challenge--obstacle-challenge-) //
