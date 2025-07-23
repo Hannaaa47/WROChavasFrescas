@@ -11,6 +11,7 @@
 
 En este repositorio nuestro equipo las " Chavas frescas" desglosaremos como logramos crear un robot para participar en la World Robot Olympiad en la categoria de Future Engineers.
 
+&nbsp;
 
 # Tabla de contenidos
 * **[Contenido del repositorio](#contenido-del-repositorio)**
@@ -19,6 +20,7 @@ En este repositorio nuestro equipo las " Chavas frescas" desglosaremos como logr
 * **[Fotos del robot](#fotos-del-robot)**
 * **[Videos del robot](#videos-del-robot)**
 * **[Hardware](#hardware)**
+  * [Componentes](#componentes)
   * [Reporte de costos](#reporte-de-costos)
   * [Mobility Management](#mobility-management)
     * [Chassis](#chassis) //
@@ -42,6 +44,7 @@ En este repositorio nuestro equipo las " Chavas frescas" desglosaremos como logr
 * **[Robot Construction Guide](#robot-construction-guide)**
 * **[Nuestro proceso y reflexiones](#our-journey)**
 
+&nbsp;
 
 # Contenido del repositorio
   
@@ -61,6 +64,7 @@ En este repositorio nuestro equipo las " Chavas frescas" desglosaremos como logr
 
 *  [`other`](other) — contiene imagenes y archivos que ayudan a entender más a fondo como preparar el robot para la competencia, contiene datasheets y imagenes de los componentes.
 
+&nbsp;
 
 # ¿En que consiste la competencia?
 
@@ -68,6 +72,7 @@ La World Robot Olympiad es una competencia mundial de robótica que busca una co
 
 En nuestro caso participamos en la categoría de Future Engineers, en la cual existen dos pruebas, la prueba abierta y la prueba de obstáculos. En la prueba abierta nuestro vehículo debe completar exitosamente tres vueltas a la pista. En la prueba de obstáculos además de dar tres vueltas a la pista el robot debe de ir esquivando obstáculos y al final estacionarse en paralelo. En ambas pruebas existen elementos aleatorios como la posición de los obstáculos y el sentido de las vueltas, además de limitaciones para el robot.
 
+&nbsp;
 
 # Equipo
 
@@ -75,6 +80,7 @@ En nuestro caso participamos en la categoría de Future Engineers, en la cual ex
 
 //descripcion y foto individual de cada uno
   
+&nbsp;
 
 # Fotos del robot
 
@@ -90,7 +96,7 @@ En nuestro caso participamos en la categoría de Future Engineers, en la cual ex
 
 //foto de atras
 
-  
+&nbsp;  
 
 # Videos del robot
 
@@ -100,13 +106,14 @@ En nuestro caso participamos en la categoría de Future Engineers, en la cual ex
 
 //video de la prueba de obstaculos
 
-  
 
 Los vídeos de rendimiento deben demostrar el rendimiento del vehículo de principio a fin para cada desafío. Los vídeos pueden incluir comentarios, títulos o animaciones. El vídeo también puede incluir aspectos de las secciones 1(gestion de movilidad), 2(gestion de la potencia y los sentidos) o 3(gestion de obstaculos)
 
-  
+&nbsp; 
 
-# Hardware
+### <span style="font-size: 2em;">Hardware</span>
+
+## Componenetes 
 
 ***Esp32-WROVER*** 
 
@@ -353,7 +360,7 @@ Un BMS, o Sistema de Gestión de Baterías (por sus siglas en inglés, Battery M
   
 <br>
 
-**LM2596 Regulador Step Down 25W 3A**
+***LM2596 Regulador Step Down 25W 3A***
 
 El regulador Step Down, conocido también como Buck, es un dispositivo electrónico de alta frecuencia que realiza una conversión descendente de voltaje de entrada, permitiendo transformar voltajes en un rango de 4.5V a 28V a un rango más bajo de 0.8V a 20V. Con capacidad para regular hasta 3A de corriente. Este componente nos permite alimentar de manera segura elementos que ocupan menos potencia. Para mas información consulte el [datasheet](other/Datasheets/MP1584_r1.0-779241.pdf).
 
@@ -375,7 +382,6 @@ El regulador Step Down, conocido también como Buck, es un dispositivo electrón
 </table>
   
 <br>
-
 
 ## Reporte de costos
 
@@ -468,20 +474,23 @@ El regulador Step Down, conocido también como Buck, es un dispositivo electrón
 </div>
 otras cosas..
 
+<br>
+
 ## Mobility Management
 
   
 
 blah blah
 
-  
+<br>
 
 ## Power and Sense Management
 
   
 
 blah blah
-  
+
+&nbsp;
 
 # Software
 
@@ -497,7 +506,7 @@ blah blah
 
 blah blah
 
-  
+&nbsp;
 
 # Robot Construction Guide
 
@@ -505,7 +514,7 @@ blah blah
 
 blah blah
 
-  
+&nbsp;
 
 # Our journey
 
