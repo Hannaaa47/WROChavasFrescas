@@ -106,7 +106,7 @@ Su función en nuestro proyecto es hacer de motor controller y obtener lecturas 
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/Foto componentes/ESP32.jpg" alt="ESP32" height=300px>
+      <img src="./other/img/ESP32.jpg" alt="ESP32" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
@@ -130,7 +130,7 @@ Hace la función del cerebro principal del robot, esta a cargo de la computer vi
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/Foto componentes/raspberry 4 model b.jpg" alt="Raspberry pi" height=300px>
+      <img src="./other/img/raspberry 4 model b.jpg" alt="Raspberry pi" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
@@ -154,7 +154,7 @@ Usamos este servomotor para controlar la dirección del carro, decidimos usar es
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/Foto componentes/Servomotor MG995 180.jpg" alt="Servomotor" height=300px>
+      <img src="./other/img/Servomotor MG995 180.jpg" alt="Servomotor" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
@@ -174,12 +174,17 @@ Usamos este servomotor para controlar la dirección del carro, decidimos usar es
 
 Elegimos un motor de corriente continua, debido a su facilidad para usarlo. Estos motores toman la energía eléctrica mediante corriente continua y la convierten en rotación mecánica. Despues de calcular el [torque](/research/README.md) concluimos que ibamos a necesitar un motor con un buen torque para poder mover el robot. 
 
-Este motor tambien cuenta con un encoder, el encoder nos ayuda a monitorear las el moviemiento del motor, gracias a el pudimos implementar un sistema [PID](/research/README.md) para corregir las variaciones de la energia y contar un moviemiento consistente. Si quieres saber un poco más del motor revisa esta [imagen](other/Datasheets/motor.webp).
+Este motor tambien cuenta con un encoder, el encoder nos ayuda a monitorear las el moviemiento del motor.
+
+// gracias a el pudimos implementar un sistema [PID](/research/README.md) para corregir las variaciones de la 
+// energia y contar un moviemiento consistente. 
+ 
+ Si quieres saber un poco más del motor revisa esta [imagen](other/Datasheets/motor.webp).
 
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/Foto componentes/Motor.jpg" alt="Motor" height=300px>
+      <img src="./other/img/Motor.jpg" alt="Motor" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
@@ -206,7 +211,7 @@ Elegimos este motor driver debido a su gran eficiencia energética, su tamaño c
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/Foto componentes/Motor driver TB6612FNG.jpg" alt="Motor driver" height=300px>
+      <img src="./other/img/Motor driver TB6612FNG.jpg" alt="Motor driver" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
@@ -229,7 +234,7 @@ Usamos una mini cámara gran angular, esta se conecta directamente al raspberry.
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/Foto componentes/Cámara OV5647.jpg" alt="Camara" height=300px>
+      <img src="./other/img/Cámara OV5647.jpg" alt="Camara" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
@@ -252,7 +257,7 @@ En otras palabras el sensor ultrasónico nos permite saber con precision a que d
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/Foto componentes//Sensor Ultrasonico.jpg" alt="Sensor ultrasonico" height=300px>
+      <img src="./other/img//Sensor Ultrasonico.jpg" alt="Sensor ultrasonico" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
@@ -276,7 +281,7 @@ El MPU6050 es una unidad de medición inercial o IMU (Inertial Measurment Units)
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/Foto componentes/IMU.jpg" alt="IMU" height=300px>
+      <img src="./other/img/IMU.jpg" alt="IMU" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
@@ -298,7 +303,7 @@ La pila 18650 es una batería recargable Li-ion, que se parece mucho a la pila t
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/Foto componentes/Baterias 18650.jpg" alt="Baterias" height=300px>
+      <img src="./other/img/Baterias 18650.jpg" alt="Baterias" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
@@ -321,7 +326,7 @@ Un BMS, o Sistema de Gestión de Baterías (por sus siglas en inglés, Battery M
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/Foto componentes/bms.jpg" alt="bms" height=300px>
+      <img src="./other/img/bms.jpg" alt="bms" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
@@ -345,7 +350,7 @@ El regulador Step Down, conocido también como Buck, es un dispositivo electrón
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/Foto componentes/step down.jpg" alt="step down" height=300px>
+      <img src="./other/img/step down.jpg" alt="step down" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
