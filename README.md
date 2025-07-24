@@ -360,7 +360,7 @@ Un BMS, o Sistema de Gestión de Baterías (por sus siglas en inglés, Battery M
   
 <br>
 
-***LM2596 Regulador Step Down 25W 3A***
+***MP1584EN Módulo Step Down 3A***
 
 El regulador Step Down, conocido también como Buck, es un dispositivo electrónico de alta frecuencia que realiza una conversión descendente de voltaje de entrada, permitiendo transformar voltajes en un rango de 4.5V a 28V a un rango más bajo de 0.8V a 20V. Con capacidad para regular hasta 3A de corriente. Este componente nos permite alimentar de manera segura elementos que ocupan menos potencia. Para mas información consulte el [datasheet](other/Datasheets/MP1584_r1.0-779241.pdf).
 
