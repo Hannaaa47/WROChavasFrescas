@@ -111,9 +111,9 @@ Los vídeos de rendimiento deben demostrar el rendimiento del vehículo de princ
 
 &nbsp; 
 
-### <span style="font-size: 2em;">Hardware</span>
+# Hardware
 
-## Componenetes 
+## Componentes 
 
 ***Esp32-WROVER*** 
 
@@ -326,6 +326,7 @@ La pila 18650 es una batería recargable Li-ion, que se parece mucho a la pila t
       <h3>Especificaciones:</h3>
       <li>Voltaje: 3.7V</li>
       <li>Amperaje: 3000mA  </li>
+      <li>Ciclos de vida: 300–500 ciclos </li>
       <li>Peso: 50 gramos</li>
       <li>Dimensiones: 18 × 65 mm</li> 
       </li>
@@ -349,8 +350,7 @@ Un BMS, o Sistema de Gestión de Baterías (por sus siglas en inglés, Battery M
       <h3>Especificaciones:</h3>
       <li>Voltaje por celda: 3.7V</li>
       <li>Voltaje nominal: 11.1V</li>
-      <li>Amperaje: 1000mAh–5000mAh ???</li>
-      <li>Ciclos de vida: 300–500 ciclos??? </li>
+      <li>Corriente de salida máxima: 3A</li>
       <li>Peso: 80 gramos</li>
       <li>Dimensiones: 10 × 10 x 10 mm</li> 
       </li>
@@ -478,15 +478,11 @@ otras cosas..
 
 ## Mobility Management
 
-  
-
 blah blah
 
 <br>
 
 ## Power and Sense Management
-
-  
 
 blah blah
 
