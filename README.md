@@ -360,22 +360,22 @@ Un BMS, o Sistema de Gestión de Baterías (por sus siglas en inglés, Battery M
   
 <br>
 
-***MP1584EN Módulo Step Down 3A***
+***LM2596 Regulador Step Down***
 
-El regulador Step Down, conocido también como Buck, es un dispositivo electrónico de alta frecuencia que realiza una conversión descendente de voltaje de entrada, permitiendo transformar voltajes en un rango de 4.5V a 28V a un rango más bajo de 0.8V a 20V. Con capacidad para regular hasta 3A de corriente. Este componente nos permite alimentar de manera segura elementos que ocupan menos potencia. Para mas información consulte el [datasheet](other/Datasheets/MP1584_r1.0-779241.pdf).
+El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficiente para reducir el voltaje de entrada en un circuito. Diseñado para manejar corrientes de hasta 3A, este regulador puede aceptar un voltaje de entrada que varía de 4 a 35V y proporciona un voltaje de salida ajustable de 2 a 28V. Gracias a su potenciómetro (trimpot) multivuelta, puedes seleccionar fácilmente el voltaje de salida deseado, lo que lo convierte en una opción versátil para una variedad de aplicaciones electrónicas.
 
 <table>
   <tr>
     <td width="400px" style="text-align: center;">
-      <img src="./other/img/step down.jpg" alt="step down" height=300px>
+      <img src="./other/img/STEP DOWNN.jpg" alt="step down" height=300px>
     </td>
     <td width="500px" style="text-align: left; vertical-align: center;">
       <h3>Especificaciones:</h3>
-      <li>Voltaje de entrada: 4.5V-28V</li>
-      <li>Voltaje de salida: 0.8V-20V </li>
+      <li>Voltaje de entrada: 4V-35V</li>
+      <li>Voltaje de salida: 2V-30V </li>
       <li>Corriente de salida máxima: 3A</li>
       <li>Peso: 3 gramos</li>
-      <li>Dimensiones: 22 x 17 x 4 mm</li> 
+      <li>Dimensiones: 43 x 21 x 14 mm</li> 
       </li>
     </td>
   </tr>
