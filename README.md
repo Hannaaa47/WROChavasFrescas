@@ -115,9 +115,9 @@ Los vídeos de rendimiento deben demostrar el rendimiento del vehículo de princ
 
 ## Componentes 
 
-***Esp32-WROVER*** 
+***Esp32*** 
 
-Es un Single Board Microcontroller (SBM), es un sistema en chip (SoC) económico y de bajo consumo que combina funciones Wi-Fi y Bluetooth. Desde una perspectiva técnica, el ESP32 es un MCU de 32 bits con un microprocesador Tensilica Xtensa LX6, con una velocidad de reloj de hasta 240 MHz, 448 KB de ROM y 520 KB de SRAM. También incluye una amplia selección de periféricos, como un ADC de 10 bits, 6x PWM, I₂C, SPI, UART y más. La programación del ESP32 es relativamente sencilla, ya que admite diversos lenguajes de programación, como C/C++, ensamblador y Python. También es compatible con el IDE de Arduino, una popular plataforma de código abierto para la programación de microcontroladores. Para ver mas información puede ver el [datasheet](other/Datasheets/esp32-wrover_datasheet_en.pdf) y la descripción de los [pines GPIO](other/Datasheets/ESP32_Pinout_V3.0.png).
+Es un Single Board Microcontroller (SBM), es un sistema en chip (SoC) económico y de bajo consumo que combina funciones Wi-Fi y Bluetooth. Desde una perspectiva técnica, el ESP32 es un MCU de 32 bits con un microprocesador Tensilica Xtensa LX6, con una velocidad de reloj de hasta 240 MHz, 448 KB de ROM y 520 KB de SRAM. También incluye una amplia selección de periféricos, como un ADC de 10 bits, 6x PWM, I₂C, SPI, UART y más. La programación del ESP32 es relativamente sencilla, ya que admite diversos lenguajes de programación, como C/C++, ensamblador y Python. También es compatible con el IDE de Arduino, una popular plataforma de código abierto para la programación de microcontroladores. Para ver mas información puede ver el [datasheet](other/Datasheets/esp32-wrover_datasheet_en.pdf) y la descripción de los [pines GPIO](other/img/pinesRaspberry.jpg).
 
 Su función en nuestro proyecto es hacer de motor controller y obtener lecturas precisas de los sensores, dada a la rápida comunicación que tiene entre componentes. Elegimos al Esp32 sobre la opción clásica que sería algún arduino, ya que después de analizar ambos llegamos a la conclusión que el Esp32 es mejor. 
 <table>
@@ -140,7 +140,7 @@ Su función en nuestro proyecto es hacer de motor controller y obtener lecturas 
 
 ***Raspberry Pi 4 Model B***
 
-El Single-Board Computer (SBC), es un pequeño computador, consiste en una placa base que soporta distintos componentes de un ordenador, como un procesador ARM de hasta 1500 MHz, un chip gráfico y una memoria RAM de hasta 8 GB. Para ver más información consulte el [datasheet](other/Datasheets/raspberry-pi-4-product-brief.pdf).
+El Single-Board Computer (SBC), es un pequeño computador, consiste en una placa base que soporta distintos componentes de un ordenador, como un procesador ARM de hasta 1500 MHz, un chip gráfico y una memoria RAM de hasta 8 GB. Puede ver la configuración de los gpio pines en esta [imagen](other/img/pinesRaspberry.jpg), para ver más información consulte el [datasheet](other/Datasheets/raspberry-pi-4-product-brief.pdf).
 
 Hace la función del cerebro principal del robot, esta a cargo de la computer vision interpretando los datos de la camara, ademas toma las decisiones importantes.
 
@@ -223,7 +223,7 @@ Este motor tambien cuenta con un encoder, el encoder nos ayuda a monitorear las 
 Un motor driver nos ayuda a controlar el motor con un voltaje más alto, controlando la velocidad y el sentido de giro. 
 
 El driver para motores TB6612FNG posee dos puentes H, puede controlar hasta dos motores de DC con una corriente costante de 1.2A (3.2A pico). Dos señales de entrada (IN1 y IN2) pueden ser usadas para controlar el motor en uno de cuatro modos posibles: CW(giro en sentido de las manecillas del reloj), CCW (en contra de las manecillas), short-brake y stop. Las dos salidas de motores (A y B) pueden ser controladas de manera separada, la velocidad de cada motor es controlada mediante una señal PWM con una frecuencia de hasta 100kHz. El pin STBY cuando es puesto en HIGH coloca al motor en modo de standby. El driver posee diodos internos de protección.
-Elegimos este motor driver debido a su gran eficiencia energética, su tamaño compacto, genera menos calor y su control preciso. Para saber más sobre este componente revise su [datasheet](other/Datasheets/TB6612FNG.pdf).
+Elegimos este motor driver debido a su gran eficiencia energética, su tamaño compacto, genera menos calor y su control preciso. Para saber más sobre este componente revise su [datasheet](other/Datasheets/TB6612FNG.pdf) y para ver el pinout vea la [imagen](other/img/tb6612fng-pinout.png).
 
 <table>
   <tr>
@@ -480,11 +480,23 @@ otras cosas..
 
 blah blah
 
+Para el 100 -> Exceeds expectations: Not only can an exact duplication be made from the information provided, but information on improvements is also provided.
+
+Mobility Management 
+Mobility management discussion should cover how the vehicle movements are managed. What motors are selected, how they are selected and implemented. A brief discussion regarding the vehicle chassis design /selection can be provided as well as the mounting of all components to the vehicle chassis/structure. The discussion may include engineering principles such as speed, torque, power etc. usage. Building or assembly instructions can be provided together with 3D CAD files to 3D print parts.
+
+
 <br>
 
 ## Power and Sense Management
 
 blah blah
+
+Para el 100 -> Exceeds expectations: Not only can an exact duplication be made from the information provided, but information on improvements is also provided.
+
+Power and Sense 
+Management Power and Sense management discussion should cover the power source for the vehicle as well as the sensors required to provide the vehicle with information to negotiate the different challenges. The discussion can include the reasons for selecting various sensors and how they are being used on the vehicle together with power consumption. The discussion could include a wiring diagram with BOM 
+
 
 &nbsp;
 
@@ -498,7 +510,10 @@ blah blah
 
 ## Obstacle Management
 
-  
+Para el 100 -> Exceeds expectations: Not only can an exact duplication be made from the information provided, but information on improvements is also provided.
+
+Obstacle Management 
+Obstacle management discussion should include the strategy for the vehicle to negotiate the obstacle course for all the challenges. This could include flow diagrams, pseudo code and source code with detailed comments
 
 blah blah
 
