@@ -9,7 +9,7 @@
 
 [![Website](https://img.shields.io/badge/Website-Visit-brightgreen?style=for-the-badge&logo=web&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Youtube](https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=Youtube&logoColor=white)](https://www.instagram.com/yonatanmt1/)
 
-En este repositorio nuestro equipo las " Chavas frescas" desglosaremos como logramos crear un robot para participar en la World Robot Olympiad en la categoria de Future Engineers.
+En este repositorio nuestro equipo las "Chavas frescas" desglosaremos como logramos crear un robot para participar en la World Robot Olympiad en la categoria de Future Engineers.
 
 &nbsp;
 
@@ -70,7 +70,15 @@ En este repositorio nuestro equipo las " Chavas frescas" desglosaremos como logr
 
 La World Robot Olympiad es una competencia mundial de robótica que busca una competencia sana para jóvenes, alentando el aprendizaje y la curiosidad.
 
-En nuestro caso participamos en la categoría de Future Engineers, en la cual existen dos pruebas, la prueba abierta y la prueba de obstáculos. En la prueba abierta nuestro vehículo debe completar exitosamente tres vueltas a la pista. En la prueba de obstáculos además de dar tres vueltas a la pista el robot debe de ir esquivando obstáculos y al final estacionarse en paralelo. En ambas pruebas existen elementos aleatorios como la posición de los obstáculos y el sentido de las vueltas, además de limitaciones para el robot.
+En nuestro caso participamos en la categoría de Future Engineers, el objetivo es construir un vehículo autodirigido con algunas limitaciones(como peso, tamaño y número de motores), el cual debe de ser capaz de pasar dos pruebas.
+
+Prueba abierta.
+![Prueba abierta](research/FutureEngineers/PruebaAbierta.png)
+
+Prueba de obstáculos. 
+![Prueba de obstáculos](research/FutureEngineers/PruebaDeObstaculos.png)
+
+En la prueba abierta nuestro vehículo debe completar exitosamente tres vueltas a la pista. En la prueba de obstáculos además de dar tres vueltas a la pista el robot debe de ir esquivando obstáculos y al final estacionarse en paralelo. En ambas pruebas existen elementos aleatorios como la posición de los obstáculos y el sentido de las vueltas, estos elementos cambian después de cada ronda. Para conocer más puede leer las [reglas generales](research/FutureEngineers/WRO-2025-Futuros%20Ingenieros-Automóviles%20autónomos-Reglas%20Generales-Espanol-corregido.pdf) o visitar el [sitio oficial](https://wromexico.org/). 
 
 &nbsp;
 
@@ -100,8 +108,6 @@ En nuestro caso participamos en la categoría de Future Engineers, en la cual ex
 
 # Videos del robot
 
-  
-
 //video de la prueba abierta
 
 //video de la prueba de obstaculos
@@ -117,7 +123,7 @@ Los vídeos de rendimiento deben demostrar el rendimiento del vehículo de princ
 
 ***Esp32*** 
 
-Es un Single Board Microcontroller (SBM), es un sistema en chip (SoC) económico y de bajo consumo que combina funciones Wi-Fi y Bluetooth. Desde una perspectiva técnica, el ESP32 es un MCU de 32 bits con un microprocesador Tensilica Xtensa LX6, con una velocidad de reloj de hasta 240 MHz, 448 KB de ROM y 520 KB de SRAM. También incluye una amplia selección de periféricos, como un ADC de 10 bits, 6x PWM, I₂C, SPI, UART y más. La programación del ESP32 es relativamente sencilla, ya que admite diversos lenguajes de programación, como C/C++, ensamblador y Python. También es compatible con el IDE de Arduino, una popular plataforma de código abierto para la programación de microcontroladores. Para ver mas información puede ver el [datasheet](other/Datasheets/esp32-wrover_datasheet_en.pdf) y la descripción de los [pines GPIO](other/img/pinesRaspberry.jpg).
+Es un Single Board Microcontroller (SBM), es un sistema en chip (SoC) económico y de bajo consumo que combina funciones Wi-Fi y Bluetooth. Desde una perspectiva técnica, el ESP32 es un MCU de 32 bits con un microprocesador Tensilica Xtensa LX6, con una velocidad de reloj de hasta 240 MHz, 448 KB de ROM y 520 KB de SRAM. También incluye una amplia selección de periféricos, como un ADC de 10 bits, 6x PWM, I₂C, SPI, UART y más. La programación del ESP32 es relativamente sencilla, ya que admite diversos lenguajes de programación, como C/C++, ensamblador y Python. También es compatible con el IDE de Arduino, una popular plataforma de código abierto para la programación de microcontroladores. Para ver mas información puede ver el [datasheet](other/Datasheets/esp32-wrover_datasheet_en.pdf) y la descripción de los [pines GPIO](other/img/ESP32-Pinout.jpg).
 
 Su función en nuestro proyecto es hacer de motor controller y obtener lecturas precisas de los sensores, dada a la rápida comunicación que tiene entre componentes. Elegimos al Esp32 sobre la opción clásica que sería algún arduino, ya que después de analizar ambos llegamos a la conclusión que el Esp32 es mejor. 
 <table>
@@ -129,8 +135,6 @@ Su función en nuestro proyecto es hacer de motor controller y obtener lecturas 
       <h3>Especificaciones:</h3>
       <li>Voltaje: 2.3V ~ 3.6V</li>
       <li>Amperaje: 80mA ~ 250mA </li>
-      <li>Peso: 6.8 gramos</li>
-      <li>Dimensiones: 18 × 31.40 × 3.30mm</li>
       </li>
     </td>
   </tr>
@@ -153,8 +157,6 @@ Hace la función del cerebro principal del robot, esta a cargo de la computer vi
       <h3>Especificaciones:</h3>
       <li>Voltaje: 5V</li>
       <li>Amperaje: 2500mA ~ 3000mA </li>
-      <li>Peso: 46 gramos</li>
-      <li>Dimensiones: 88 × 58 × 19.5 mm</li> 
       </li>
     </td>
   </tr>
@@ -178,8 +180,6 @@ Usamos este servomotor para controlar la dirección del carro, decidimos usar es
       <li>Voltaje:  4.8V - 7.2V</li>
       <li>Amperaje: 200mA ~ 1200mA </li>
       <li>Torque: 9.4kg/cm (4.8V) - 11kg/cm (6V)</li>
-      <li>Peso: 66 gramos</li>
-      <li>Dimensiones: 40 x 20 x 43 mm</li> 
       </li>
     </td>
   </tr>
@@ -209,8 +209,6 @@ Este motor tambien cuenta con un encoder, el encoder nos ayuda a monitorear las 
       <li>Amperaje: 120mA ~ 2300mA </li>
       <li>Torque: 6.5kg.cm (120mA) - 9kg.cm (2300mA)</li>
       <li>RPM: 178rpm</li>
-      <li>Peso: 170 gramos</li>
-      <li>Dimensiones: 63 x 37 x 33 mm</li> 
       </li>
     </td>
   </tr>
@@ -235,8 +233,6 @@ Elegimos este motor driver debido a su gran eficiencia energética, su tamaño c
       <li>Voltaje lógico (VCC): 2.7V - 5.5V</li>
       <li>Voltaje de motor (VM): 4.5V - 13.5V</li>
       <li>Corriente máxima por motor: 1.2A continuos / 3.2A pico</li>
-      <li>Peso: 5 gramos</li>
-      <li>Dimensiones: 20 x 15 mm</li> 
       </li>
     </td>
   </tr>
@@ -257,8 +253,6 @@ Usamos una mini cámara gran angular, esta se conecta directamente al raspberry.
       <h3>Especificaciones:</h3>
       <li>Video: 1080p a 30fps</li>
       <li>Campo de visión: 2.0 x 1.33 m a 2 m</li>
-      <li>Peso: 11g</li>
-      <li>Dimensiones: 25 x 24 mm</li>
       </li>
     </td>
   </tr>
@@ -281,8 +275,6 @@ En otras palabras el sensor ultrasónico nos permite saber con precision a que d
       <li>Voltaje: 3.3V ~ 5V</li>
       <li>Amperaje: 15mA </li>
       <li>Rango: 2cm ~ 400cm </li>
-      <li>Peso: 12 gramos</li>
-      <li>Dimensiones: 45 x 20 x 15mm</li> 
       </li>
     </td>
   </tr>
@@ -304,8 +296,6 @@ El MPU6050 es una unidad de medición inercial o IMU (Inertial Measurment Units)
       <h3>Especificaciones:</h3>
       <li>Voltaje: 3.3V ~ 5V</li>
       <li>Amperaje: 3.9mA  </li>
-      <li>Peso: 10 gramos</li>
-      <li>Dimensiones: 15.24 × 15.24 mm</li> 
       </li>
     </td>
   </tr>
@@ -327,8 +317,6 @@ La pila 18650 es una batería recargable Li-ion, que se parece mucho a la pila t
       <li>Voltaje: 3.7V</li>
       <li>Amperaje: 3000mA  </li>
       <li>Ciclos de vida: 300–500 ciclos </li>
-      <li>Peso: 50 gramos</li>
-      <li>Dimensiones: 18 × 65 mm</li> 
       </li>
     </td>
   </tr>
@@ -336,30 +324,6 @@ La pila 18650 es una batería recargable Li-ion, que se parece mucho a la pila t
   
 <br>
   
-
-***BMS FTVOGUE 3S 12V***
-
-Un BMS, o Sistema de Gestión de Baterías (por sus siglas en inglés, Battery Management System), es un sistema electrónico que se encarga de proteger y gestionar el funcionamiento de una batería. Usamos este componente para asegurarnos que nuestras pilas funcionen correctamente. Puede consultar esta [imagen](other/Foto%20componentes/bms%20detalles.jpg) para ver su configuración con las baterías.
-
-<table>
-  <tr>
-    <td width="400px" style="text-align: center;">
-      <img src="./other/img/bms.jpg" alt="bms" height=300px>
-    </td>
-    <td width="500px" style="text-align: left; vertical-align: center;">
-      <h3>Especificaciones:</h3>
-      <li>Voltaje por celda: 3.7V</li>
-      <li>Voltaje nominal: 11.1V</li>
-      <li>Corriente de salida máxima: 3A</li>
-      <li>Peso: 80 gramos</li>
-      <li>Dimensiones: 10 × 10 x 10 mm</li> 
-      </li>
-    </td>
-  </tr>
-</table>
-  
-<br>
-
 ***LM2596 Regulador Step Down***
 
 El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficiente para reducir el voltaje de entrada en un circuito. Diseñado para manejar corrientes de hasta 3A, este regulador puede aceptar un voltaje de entrada que varía de 4 a 35V y proporciona un voltaje de salida ajustable de 2 a 28V. Gracias a su potenciómetro (trimpot) multivuelta, puedes seleccionar fácilmente el voltaje de salida deseado, lo que lo convierte en una opción versátil para una variedad de aplicaciones electrónicas.
@@ -374,8 +338,6 @@ El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficien
       <li>Voltaje de entrada: 4V-35V</li>
       <li>Voltaje de salida: 2V-30V </li>
       <li>Corriente de salida máxima: 3A</li>
-      <li>Peso: 3 gramos</li>
-      <li>Dimensiones: 43 x 21 x 14 mm</li> 
       </li>
     </td>
   </tr>
@@ -392,86 +354,71 @@ El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficien
     <tr>
       <th align="center">Nombre</th>
       <th align="center">Cantidad</th>
-      <th align="center">Costo por unidad</th>
       <th align="center">Costo total</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>ESP32-WROVER</td>
+      <td>ESP32</td>
       <td align="center">1</td>
-      <td align="center">$10.00</td>
-      <td align="center">$10.00</td>
+      <td align="center">$200.00</td>
     </tr>
     <tr>
       <td>Raspberry Pi 4 Model B</td>
       <td align="center">1</td>
-      <td align="center">$35.00</td>
-      <td align="center">$35.00</td>
+      <td align="center">$2100.00</td>
     </tr>
     <tr>
       <td>Servomotor MG995 180°</td>
       <td align="center">1</td>
-      <td align="center">$8.50</td>
-      <td align="center">$8.50</td>
+      <td align="center">$155.00</td>
     </tr>
     <tr>
       <td>Motor JGB37-520 DC 12v con encoder</td>
-      <td align="center">2</td>
-      <td align="center">$15.00</td>
-      <td align="center">$30.00</td>
+      <td align="center">1</td>
+      <td align="center">$258.00</td>
     </tr>
     <tr>
       <td>Motor driver TB6612FNG</td>
       <td align="center">1</td>
-      <td align="center">$5.50</td>
-      <td align="center">$5.50</td>
+      <td align="center">$96.50</td>
     </tr>
     <tr>
       <td>Cámara OV5647</td>
       <td align="center">1</td>
-      <td align="center">$12.00</td>
-      <td align="center">$12.00</td>
+      <td align="center">$160.00</td>
     </tr>
     <tr>
       <td>Sensor Ultrasónico HC-SR04</td>
-      <td align="center">2</td>
-      <td align="center">$3.00</td>
-      <td align="center">$6.00</td>
+      <td align="center">1</td>
+      <td align="center">$49.00</td>
     </tr>
     <tr>
       <td>IMU MPU6050 6 Grados de libertad</td>
       <td align="center">1</td>
-      <td align="center">$4.50</td>
-      <td align="center">$4.50</td>
+      <td align="center">$75.00</td>
     </tr>
     <tr>
-      <td>Batería 18650 3.7v 3000 mAh</td>
-      <td align="center">3</td>
-      <td align="center">$6.00</td>
-      <td align="center">$18.00</td>
-    </tr>
-    <tr>
-      <td>BMS FTVOGUE 3S 12V</td>
-      <td align="center">1</td>
-      <td align="center">$8.00</td>
-      <td align="center">$8.00</td>
+      <td>6 Batería 18650 3.7v 3000 mAh con cargador</td>
+      <td align="center">6</td>
+      <td align="center">$493.05</td>
     </tr>
     <tr>
       <td>LM2596 Regulador Step Down 25W 3A</td>
       <td align="center">1</td>
-      <td align="center">$2.50</td>
-      <td align="center">$2.50</td>
+      <td align="center">$60.00</td>
     </tr>
     <tr>
       <td><strong>Total</strong></td>
-      <td colspan="2"></td>
-      <td align="center"><strong>$140.00</strong></td>
+      <td colspan="1"></td>
+      <td align="center"><strong>$3646.50</strong></td>
     </tr>
   </tbody>
 </table>
 
 </div>
+
++ impresion 3d 
 otras cosas..
 
 <br>
