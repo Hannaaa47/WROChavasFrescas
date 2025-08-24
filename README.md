@@ -347,68 +347,6 @@ El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficien
 
 ## Reporte de costos
 
-<div align="left">
-
-<table>
-  <thead>
-    <tr>
-      <th align="center">Nombre</th>
-      <th align="center">Costo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ESP32</td>
-      <td align="center">$200.00</td>
-    </tr>
-    <tr>
-      <td>Raspberry Pi 4 Model B</td>
-      <td align="center">$2100.00</td>
-    </tr>
-    <tr>
-      <td>Servomotor MG995 180°</td>
-      <td align="center">$155.00</td>
-    </tr>
-    <tr>
-      <td>Motor JGB37-520 DC 12v con encoder</td>
-      <td align="center">$258.00</td>
-    </tr>
-    <tr>
-      <td>Motor driver TB6612FNG</td>
-      <td align="center">$96.50</td>
-    </tr>
-    <tr>
-      <td>Cámara OV5647</td>
-      <td align="center">$160.00</td>
-    </tr>
-    <tr>
-      <td>Sensor Ultrasónico HC-SR04</td>
-      <td align="center">$49.00</td>
-    </tr>
-    <tr>
-      <td>IMU MPU6050 6 Grados de libertad</td>
-      <td align="center">$75.00</td>
-    </tr>
-    <tr>
-      <td>6 Batería 18650 3.7v 3000 mAh con cargador</td>
-      <td align="center">$493.05</td>
-    </tr>
-    <tr>
-      <td>LM2596 Regulador Step Down 25W 3A</td>
-      <td align="center">$60.00</td>
-    </tr>
-    <tr>
-      <td><strong>Total</strong></td>
-      <td align="center"><strong>$3646.50</strong></td>
-    </tr>
-  </tbody>
-</table>
-
-</div>
-
-+ impresion 3d y 
-otras cosas..
-
 <br>
 
 ## Mobility Management
