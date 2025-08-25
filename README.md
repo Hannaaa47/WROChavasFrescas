@@ -23,14 +23,13 @@ En este repositorio nuestro equipo "Chavas frescas" desglosaremos como logramos 
 * **[Hardware](#hardware)**
   * [Componentes](#componentes)
   * [Reporte de costos](#reporte-de-costos)
-  * [Mobility Management](#mobility-management)
-    * [Chassis](#chassis) //
-    * [Design](#design) //
-    * [Motors](#motors) // ?
-  * [Power and Sense Management](#power-and-sense-management)
-    * [Power and Wiring](#power-and-wiring) //
-    * [Sensors](#sensors) //
-    * [Schematic](#schematic) //
+* **[Mobility Management](#mobility-management)**
+  * [Diseño del chasis](#diseño-del-chasis) 
+  * [Elección de motores](#eleccion-de-motores) 
+* **[Power and Sense Management](#power-and-sense-management)**
+  * [Voltaje y amperaje](#voltaje-y-amperaje) 
+  * [Esquema](#esquema) 
+  * [Sensores](#sensores) 
 * **[Software](#software)**
   * [Initialization and Connection Process](#-initialization-and-connection-process-) //
   * [Object Management](#object-management)
@@ -42,8 +41,6 @@ En este repositorio nuestro equipo "Chavas frescas" desglosaremos como logramos 
     *  [Parking Lot Detection/Management](#parking-lot-detectionmanagement--obstacle-challenge-) //
     *  [Three-Point Turn](#three-point-turn--obstacle-challenge-) //
     *  [Backing Up](#backing-up--obstacle-challenge-) //
-* **[Robot Construction Guide](#robot-construction-guide)**
-* **[Nuestro proceso y reflexiones](#our-journey)**
 
 &nbsp;
 
@@ -88,6 +85,13 @@ En la prueba abierta nuestro vehículo debe completar exitosamente tres vueltas 
 //foto de todos juntos
 
 //descripcion y foto individual de cada uno
+
+Integrantes del equipo:
+- Hanna Alejandra Amador Sánchez
+- Ilse Marianne Castillo Pimienta
+- Yonatan Morales Togo
+
+
   
 &nbsp;
 
@@ -351,7 +355,18 @@ El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficien
 
 <br>
 
-## Mobility Management
+# Mobility Management
+
+## Diseño del chasis
+Usamos solidworks para modelar el carro en 3d
+Arckerman y mecanismo diferencial 
+
+Ensamblaje 
+como va unido todo 
+
+## Eleccion de motores 
+hablar sobre velocidad, torque y poder 
+
 
 blah blah
 
@@ -363,7 +378,19 @@ Mobility management discussion should cover how the vehicle movements are manage
 
 <br>
 
-## Power and Sense Management
+# Power and Sense Management
+
+## Voltaje y amperaje
+
+## Esquema  
+
+## Sensores 
+  + camara
+  + ultrasonico 
+  +imu 
+
+VISUAL INERTIAL ODOMETRY
+fusionar camara y imu para localizar el carro en el espacio 
 
 blah blah
 
@@ -394,21 +421,6 @@ blah blah
 
 &nbsp;
 
-# Robot Construction Guide
 
-  
 
-blah blah
-
-&nbsp;
-
-# Our journey
-
-  
-
-blah blah
-
-  
-
-....
 
