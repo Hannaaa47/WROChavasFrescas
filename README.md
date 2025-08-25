@@ -7,9 +7,10 @@
 
 <br>
 
-[![Website](https://img.shields.io/badge/Website-Visit-brightgreen?style=for-the-badge&logo=web&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/yonatanmt1/) [![Youtube](https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=Youtube&logoColor=white)](https://www.instagram.com/yonatanmt1/)
+[![Website](https://img.shields.io/badge/Website-Visit-brightgreen?style=for-the-badge&logo=web&logoColor=white)](https://github.com/Hannaaa47/WROChavasFrescas) 
+[![Youtube](https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=Youtube&logoColor=white)](https://github.com/Hannaaa47/WROChavasFrescas)
 
-En este repositorio nuestro equipo las "Chavas frescas" desglosaremos como logramos crear un robot para participar en la World Robot Olympiad en la categoria de Future Engineers.
+En este repositorio nuestro equipo "Chavas frescas" desglosaremos como logramos crear un robot para participar en la World Robot Olympiad en la categoria de Future Engineers.
 
 &nbsp;
 
@@ -78,7 +79,7 @@ Prueba abierta.
 Prueba de obstáculos. 
 ![Prueba de obstáculos](research/FutureEngineers/PruebaDeObstaculos.png)
 
-En la prueba abierta nuestro vehículo debe completar exitosamente tres vueltas a la pista. En la prueba de obstáculos además de dar tres vueltas a la pista el robot debe de ir esquivando obstáculos y al final estacionarse en paralelo. En ambas pruebas existen elementos aleatorios como la posición de los obstáculos y el sentido de las vueltas, estos elementos cambian después de cada ronda. Para conocer más puede leer las [reglas generales](research/FutureEngineers/WRO-2025-Futuros%20Ingenieros-Automóviles%20autónomos-Reglas%20Generales-Espanol-corregido.pdf) o visitar el [sitio oficial](https://wromexico.org/). 
+En la prueba abierta nuestro vehículo debe completar exitosamente tres vueltas a la pista. En la prueba de obstáculos además de dar tres vueltas a la pista el robot debe de ir esquivando obstáculos y al final estacionarse en paralelo. En ambas pruebas existen elementos aleatorios como la posición de los obstáculos y el sentido de las vueltas, estos elementos cambian después de cada ronda. Para conocer más puede leer las [reglas generales](https://wro-association.org/wp-content/uploads/WRO-2022-Future-Engineers-General-Rules.pdf) o visitar el [sitio oficial](https://wromexico.org/). 
 
 &nbsp;
 
@@ -346,6 +347,7 @@ El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficien
 <br>
 
 ## Reporte de costos
+...
 
 <br>
 
