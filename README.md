@@ -359,7 +359,8 @@ El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficien
 
 ## Diseño del chasis
 Usamos solidworks para modelar el carro en 3d
-Arckerman y mecanismo diferencial 
+
+Para moverse usamos Arckerman y mecanismo diferencial 
 
 Ensamblaje 
 como va unido todo 
