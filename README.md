@@ -213,7 +213,8 @@ Este motor tambien cuenta con un encoder, el encoder nos ayuda a monitorear las 
       <li>Voltaje:  12V</li>
       <li>Amperaje: 120mA ~ 2300mA </li>
       <li>Torque: 6.5kg.cm (120mA) - 9kg.cm (2300mA)</li>
-      <li>RPM: 178rpm</li>
+      <h3>Encoder</h3>
+      <li>Voltaje: 3.3V</li>
       </li>
     </td>
   </tr>
@@ -353,21 +354,33 @@ El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficien
 ## Reporte de costos
 ...
 
-<br>
+&nbsp;
 
 # Mobility Management
 
 ## Diseño del chasis
-Usamos solidworks para modelar el carro en 3d
+Usamos solidworks para modelar el carro en 3d. Todos los modelos se pueden ver [aqui](models).
 
 Para moverse usamos Arckerman y mecanismo diferencial 
 
-Ensamblaje 
-como va unido todo 
+¿Como ensamblamos todo? 
+
+<br>
 
 ## Eleccion de motores 
+Las dimensiones maximas de nuestro robot son de 30x20x30 cm y 1.5 kg, basandonos en eso elegimos nuestros componentes
+
+**Motor JGB37-520 DC 12v** 
+
 hablar sobre velocidad, torque y poder 
 
+**Motor driver TB6612FNG**
+
+eficiencia 
+
+**Servomotor MG995 180°** 
+
+torque
 
 blah blah
 
@@ -377,13 +390,42 @@ Mobility Management
 Mobility management discussion should cover how the vehicle movements are managed. What motors are selected, how they are selected and implemented. A brief discussion regarding the vehicle chassis design /selection can be provided as well as the mounting of all components to the vehicle chassis/structure. The discussion may include engineering principles such as speed, torque, power etc. usage. Building or assembly instructions can be provided together with 3D CAD files to 3D print parts.
 
 
-<br>
+&nbsp;
 
 # Power and Sense Management
 
 ## Voltaje y amperaje
 
+<br>
+
 ## Esquema  
+Energía
+* 3 pilas 18650 en serie (12v)
+	* Motor JGB37-520 DC 12v
+	* LM2596 Regulador Step Down (pasa de 12v a 5v)
+		* Servomotor MG995 180°
+		* Sensor Ultrasónico HC-SR04
+* Batería Portátil (5v 3A)
+	* Raspberry Pi 4 Model B (alimenta al esp32 por cable usb a usbc)
+		* Esp32 (tiene una salida de voltaje de 3.3v)
+			* Motor driver TB6612FNG
+			* IMU MPU6050
+			* Encoder
+      * Botones
+
+
+Control
+* Raspberry pi 
+  * Servomotor
+  * Camara
+  * Esp32
+    * Motor driver
+    * Botones
+    * IMU
+    * Ultrasonico
+    * Encoder
+
+<br>
 
 ## Sensores 
   + camara
@@ -404,14 +446,16 @@ Management Power and Sense management discussion should cover the power source f
 &nbsp;
 
 # Software
-
+Para el desarrollo de software programamos el esp32 con arduino ide en c++ y programamos el raspberry pi en python
   
 
 blah blah
 
-  
+<br>
 
 ## Obstacle Management
+
+Usamos la camara con la libreria de python opencv
 
 Para el 100 -> Exceeds expectations: Not only can an exact duplication be made from the information provided, but information on improvements is also provided.
 
