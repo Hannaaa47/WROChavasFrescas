@@ -18,8 +18,11 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(3, GPIO.OUT)
 
-p = GPIO.PWM(3, 50)  # 35 Hz
+p = GPIO.PWM(3, 50)  # 50 Hz
 p.start(7.0)          # Centro
+
+#distancia minima ultrasonico
+distanciaMin = 7
 
 def giraDer() :
 	p.ChangeDutyCycle(12.5) # Derecha
@@ -52,17 +55,51 @@ def detectar_lado_libre(frame):
         return "DERECHA"
     else:
         return None
+
+def vueltas():
+	esp32.write(b"M1\n")
+		for i in range (0,12):
+			esp32.write(b"U1\n")
+			distancia = 220304203.0
+			esp32.reset_input_buffer()
+			while(distancia > distanciaMin):
+				#print("Comando enviado a ESP32")
+				if esp32.in_waiting > 0:
+					line = esp32.readline().decode("utf-8").rstrip()
+					#print(f"Recibido del ESP32: {line}")
+					#print(type(line)) 
+					try:
+						distancia = float(line)
+						if distancia >= 0 and distancia <= 1:  # fuera de rango tipico
+							continue
+						#print("Distancia valida:", distancia)
+					except ValueError:
+						continue
+
+			if distancia < distanciaMin && detectar_lado_libre == "IZQUIERDA":
+				giraIzq()
+
+			elif distancia < distanciaMin && detectar_lado_libre == "DERECHA":
+				giraDer()
+
+			esp32.write(b"U0\n")
+			time.sleep(1)
+			giraCen()
+
+		time.sleep(4)
+		break
+	
         
 
 if __name__ == '__main__':
 	esp32 = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
 	esp32.reset_input_buffer()
-	esp32.write(b"B1\n")
+	#esp32.write(b"B1\n")
 	line=""
 	while(True):
 		if esp32.in_waiting > 0:
 			line = esp32.readline().decode("utf-8").rstrip()
-			print(f"Recibido del ESP32: {line}")
+			#print(f"Recibido del ESP32: {line}")
             #print(type(line)) 
 			if (line=="Boton verde presionado"):
 				break;
@@ -72,18 +109,9 @@ if __name__ == '__main__':
 		try:
 			while True:
 				frame = picam2.capture_array()
-				frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+				#frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
 
 				direccion = detectar_lado_libre(frame)
-
-				if direccion == "IZQUIERDA":
-					print("Obstaculo a la derecha, girando servo a la izquierda")
-					#servo.ChangeDutyCycle(2.9)  # Izquierda
-					break
-				elif direccion == "DERECHA":
-					print("Obstaculo a la izquierda, girando servo a la derecha")
-					#servo.ChangeDutyCycle(12.9) # Derecha
-					break
 
 				cv2.imshow("Camara", frame)
 				if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -92,29 +120,7 @@ if __name__ == '__main__':
 		except KeyboardInterrupt:
 			pass
 		
-		esp32.write(b"M1\n")
-		for i in range (0,12):
-			esp32.write(b"U1\n")
-			distancia= 220304203.0
-			esp32.reset_input_buffer()
-			while(distancia>7):
-				#print("Comando enviado a ESP32")
-				if esp32.in_waiting > 0:
-					line = esp32.readline().decode("utf-8").rstrip()
-					print(f"Recibido del ESP32: {line}")
-					#print(type(line)) 
-					try:
-						distancia = float(line)
-						if distancia >= 0 and distancia <= 1:  # fuera de rango tpico
-							continue
-						#print("Distancia valida:", distancia)
-					except ValueError:
-						continue
-
-			esp32.write(b"U0\n")
-			giraDer()
-			time.sleep(4)
-			giraCen()
+		vueltas()
 		
 	esp32.write(b"M0\n")
     
