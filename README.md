@@ -1,7 +1,5 @@
 <div align="center">
 
-# **Chavas frescas**
-
 <img src="./other/img/logo chavas frescas.png" alt="banner" height="400px" align="center">
 </div> 
 
