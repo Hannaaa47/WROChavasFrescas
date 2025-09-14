@@ -1,126 +1,95 @@
-from picamera2 import Picamera2
 import serial
-import cv2
+
 import numpy as np
 import RPi.GPIO as GPIO
 import time
 
-
-# === Configuracion de camara ===
-picam2 = Picamera2()
-picam2.preview_configuration.main.size = (640, 480)
-picam2.preview_configuration.main.format = "BGR888"
-picam2.configure("preview")
-picam2.start()
-
-#configuracion del servo
+# Configuracion del servo
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(3, GPIO.OUT)
 
 p = GPIO.PWM(3, 50)  # 50 Hz
-p.start(7.0)          # Centro
+p.start(7.0)         # Centro
 
-#distancia minima ultrasonico
-distanciaMin = 7
+# Distancia minima ultrasonico
+distanciaMin = 40
 
-def giraDer() :
-	p.ChangeDutyCycle(12.5) # Derecha
-	time.sleep(2)
-	p.ChangeDutyCycle(0)  
-	
-def giraIzq() :
-	p.ChangeDutyCycle(2.5) # Izquierda
-	time.sleep(2)
-	p.ChangeDutyCycle(0)  
-	
-def giraCen() :
-	p.ChangeDutyCycle(7.0) # Centro
-	time.sleep(2)
-	p.ChangeDutyCycle(0)  
+def giraDer():
+    p.ChangeDutyCycle(9.5)  # Derecha
+    time.sleep(2)
+    p.ChangeDutyCycle(0)
+
+def giraIzq():
+    p.ChangeDutyCycle(2.5)  # Izquierda
+    time.sleep(2)
+    p.ChangeDutyCycle(0)
+
+def giraCen():
+    p.ChangeDutyCycle(6.5)  # Centro
+    time.sleep(2)
+    p.ChangeDutyCycle(0)
 
 # === Funcion para deteccion de lado libre ===
-def detectar_lado_libre(frame):
-    brillo = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    mitad = frame.shape[1] // 2
-    izquierda = brillo[:, :mitad]
-    derecha = brillo[:, mitad:]
+def detectar_lado_libre():
+    # Aqui deberias implementar la deteccion real con OpenCV o sensores
+    return "DERECHA"   # De momento fijo para pruebas
 
-    avg_izq = np.mean(izquierda)
-    avg_der = np.mean(derecha)
-
-    if avg_izq > avg_der + 10:
-        return "IZQUIERDA"
-    elif avg_der > avg_izq + 10:
-        return "DERECHA"
-    else:
-        return None
-
-def vueltas():
-	esp32.write(b"M1\n")
-		for i in range (0,12):
-			esp32.write(b"U1\n")
-			distancia = 220304203.0
-			esp32.reset_input_buffer()
-			while(distancia > distanciaMin):
-				#print("Comando enviado a ESP32")
-				if esp32.in_waiting > 0:
-					line = esp32.readline().decode("utf-8").rstrip()
-					#print(f"Recibido del ESP32: {line}")
-					#print(type(line)) 
-					try:
-						distancia = float(line)
-						if distancia >= 0 and distancia <= 1:  # fuera de rango tipico
-							continue
-						#print("Distancia valida:", distancia)
-					except ValueError:
-						continue
-
-			if distancia < distanciaMin && detectar_lado_libre == "IZQUIERDA":
-				giraIzq()
-
-			elif distancia < distanciaMin && detectar_lado_libre == "DERECHA":
-				giraDer()
-
-			esp32.write(b"U0\n")
-			time.sleep(1)
-			giraCen()
-
-		time.sleep(4)
-		break
-	
-        
 
 if __name__ == '__main__':
-	esp32 = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
-	esp32.reset_input_buffer()
-	#esp32.write(b"B1\n")
-	line=""
-	while(True):
-		if esp32.in_waiting > 0:
-			line = esp32.readline().decode("utf-8").rstrip()
-			#print(f"Recibido del ESP32: {line}")
-            #print(type(line)) 
-			if (line=="Boton verde presionado"):
-				break;
-	esp32.write(b"B0\n")
-	if (line=="Boton verde presionado"):   #Inicia la prueba abierta
-		#revisar sentido
-		try:
-			while True:
-				frame = picam2.capture_array()
-				#frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+    esp32 = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
+    esp32.reset_input_buffer()
+    line = ""
+    esp32.write(b"B1\n")
+    giraCen();
+    # Espera a que se presione el boton verde en el ESP32
+    while True:
+        if esp32.in_waiting > 0:
+            line = esp32.readline().decode("utf-8").rstrip()
+            if line == "Boton verde presionado":
+                break
 
-				direccion = detectar_lado_libre(frame)
+    # Enviar comando de inicio
+    esp32.write(b"B0\n")
 
-				cv2.imshow("Camara", frame)
-				if cv2.waitKey(1) & 0xFF == ord('q'):
-					break
+    if line == "Boton verde presionado":   # Inicia la prueba abierta
+        try:
+            while True:
+                direccion = detectar_lado_libre()
+                # Aqui podrias hacer algo con la direccion detectada
+                # por ahora solo sigue al bloque de control de distancia
+                break
+				
+            esp32.write(b"M1\n")
+            for i in range(1):
+                esp32.write(b"U1\n")
+                distancia = 9999.0
+                esp32.reset_input_buffer()
 
-		except KeyboardInterrupt:
-			pass
-		
-		vueltas()
-		
-	esp32.write(b"M0\n")
-    
+                # Espera hasta recibir una distancia valida
+                while distancia > distanciaMin:
+                    if esp32.in_waiting > 0:
+                        line = esp32.readline().decode("utf-8").rstrip()
+                        print(line)
+                        try:
+                            distancia = float(line)
+                            if distancia <= 0 or distancia > 500:  # filtro de valores no realistas
+                                continue
+                        except ValueError:
+                            continue
+
+				# Decision segun lado libre
+                if distancia < distanciaMin and detectar_lado_libre() == "IZQUIERDA":
+                    giraIzq()
+                elif distancia < distanciaMin and detectar_lado_libre() == "DERECHA":
+                    giraDer()
+                esp32.write(b"U0\n")
+                time.sleep(1)
+                giraCen()
+
+            time.sleep(2)
+
+        except KeyboardInterrupt:
+            pass
+
+        esp32.write(b"M0\n")
