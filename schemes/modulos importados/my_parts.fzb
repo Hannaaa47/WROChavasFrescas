@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.9.5d.2020-02-07.CD-548-0-3d61c58" icon="Mine.png">
+    <title>My Parts</title>
+    <instances>
+        <instance moduleIdRef="ESP32-HiLetgo" modelIndex="85412745" path="C:/Users/juana/Documents/Fritzing/parts/user/ESP32-HiLetgo.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="esp32_p30_w11_9de09df6ee672a047957b8e804927eb5_1" modelIndex="85412750" path="C:/Users/juana/Documents/Fritzing/parts/user/esp32_p30_w11_9de09df6ee672a047957b8e804927eb5_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="bb-usb-cable_1" modelIndex="85413054" path="C:/Users/juana/Documents/Fritzing/parts/user/bb-usb-cable_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="1x_18650_battery_holder_7fdbc419dae243128f12dd1168246f23_1" modelIndex="85414559" path="C:/Users/juana/Documents/Fritzing/parts/user/1x_18650_battery_holder_7fdbc419dae243128f12dd1168246f23_1.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="prefix0000_997845bcacba6b3294d1791584db9cdf_7" modelIndex="85420477" path="C:/Users/juana/Documents/Fritzing/parts/user/prefix0000_997845bcacba6b3294d1791584db9cdf_7.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="3-USB-Power-Bank-Battery-Pack_1" modelIndex="85422518" path="C:/Users/juana/Documents/Fritzing/parts/user/3-USB-Power-Bank-Battery-Pack_1.fzp">
+            <views/>
+        </instance>
+    </instances>
+</module>

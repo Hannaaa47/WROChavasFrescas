@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<module moduleId="1x_18650_battery_holder_7fdbc419dae243128f12dd1168246f23_1" fritzingVersion="0.9.3b" referenceFile="2x 18650 battery_a073d98e2829ed2513701f253b833ca9_1.fzp">
+  <version>1</version>
+  <author>Phil Duby</author>
+  <title>battery_holder_single_18650</title>
+  <label>Bat</label>
+  <date>Sat Feb 19 2022</date>
+  <tags>
+    <tag>3.7V</tag>
+    <tag>18650</tag>
+    <tag>Battery</tag>
+    <tag>single 18650 battery holder</tag>
+    <tag>power supply</tag>
+  </tags>
+  <properties>
+    <property name="voltage">3,7V</property>
+    <property name="part number"></property>
+    <property name="variant">initial</property>
+    <property name="family">Battery</property>
+    <property name="layer"/>
+  </properties>
+  <description>single 18650 battery holder</description>
+  <views>
+    <iconView>
+      <layers image="breadboard/1x_18650_battery_holder_1_breadboard.svg">
+        <layer layerId="icon"/>
+      </layers>
+    </iconView>
+    <breadboardView>
+      <layers image="breadboard/1x_18650_battery_holder_1_breadboard.svg">
+        <layer layerId="breadboard"/>
+      </layers>
+    </breadboardView>
+    <schematicView>
+      <layers image="schematic/1x_18650_battery_1_schematic.svg">
+        <layer layerId="schematic"/>
+      </layers>
+    </schematicView>
+    <pcbView>
+      <layers image="pcb/1x_18650_battery_holder_1_pcb.svg">
+        <layer layerId="copper0"/>
+        <layer layerId="silkscreen"/>
+        <layer layerId="copper1"/>
+      </layers>
+    </pcbView>
+  </views>
+  <connectors>
+    <connector type="male" id="connector0" name="+">
+      <description>battery pos side</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector0pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector0pin" terminalId="connector0terminal" layer="schematic"/>
+        </schematicView>
+        <pcbView>
+          <p svgId="connector0pin" layer="copper0"/>
+          <p svgId="connector0pin" layer="copper1"/>
+        </pcbView>
+      </views>
+    </connector>
+    <connector type="male" id="connector1" name="+">
+      <description>battery net side</description>
+      <views>
+        <breadboardView>
+          <p svgId="connector1pin" layer="breadboard"/>
+        </breadboardView>
+        <schematicView>
+          <p svgId="connector1pin" terminalId="connector1terminal" layer="schematic"/>
+        </schematicView>
+        <pcbView>
+          <p svgId="connector1pin" layer="copper0"/>
+          <p svgId="connector1pin" layer="copper1"/>
+        </pcbView>
+      </views>
+    </connector>
+  </connectors>
+  <url></url>
+</module>

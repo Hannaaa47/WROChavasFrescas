@@ -62,7 +62,10 @@ void desifrarMensaje(){
       else M= mensaje[1] - '0';
     } else if (mensaje[0]=='E'){
       if (mensaje[1]=='1') E= 1;
-      else E=0;
+      else {
+        resetEncoder();
+        E=0;
+      } 
     } else if (mensaje[0]=='B'){
       if (mensaje[1]=='1') B= 1;
       else B=0;
@@ -73,7 +76,6 @@ void desifrarMensaje(){
   }
 
   controlMotor(M);
-  if (E == 1) imprimePosEncoder();
   if (B == 1) botonesPresionados();
   if (U == 1) mostrarDistancias();
 }
@@ -120,10 +122,10 @@ void setupBotones() {
 
 void botonesPresionados(){
   if (BotonVerdePresionado()) {
-    Serial.println("Boton verde presionado");
+    Serial.println("BV");
   }
   if (BotonAzulPresionado()) {
-    Serial.println("Boton azul presionado");
+    Serial.println("BA");
   }
 }
 
@@ -206,7 +208,9 @@ void mostrarDistancias(){
   Serial.print(",");
   Serial.print(dDer, 2);
   Serial.print(",");
-  Serial.println(dIzq, 2);   // println cierra la línea
+  Serial.print(dIzq, 2);   // println cierra la línea
+  Serial.print(",");
+  Serial.println((float)posEncoder/(float)39);
 }
 
 // ===== ENCODER =====
@@ -222,6 +226,9 @@ void readEncoder(){
   else posEncoder--;
 }
 
-void imprimePosEncoder(){
-  Serial.println(posEncoder);
+void resetEncoder(){
+  posEncoder=0;
 }
+
+
+

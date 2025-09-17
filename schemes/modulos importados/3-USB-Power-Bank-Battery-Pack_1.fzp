@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<module fritzingVersion="1.0.4" moduleId="3-USB-Power-Bank-Battery-Pack_1" referenceFile="3-USB-Power-Bank-Battery-Pack_1.fzp">
+  <version>1</version>
+  <date>Tue Dec 31 2024</date>
+  <label>BAT</label>
+  <author>Gavin Kress (modified by vanepp Feb 2025)</author>
+  <description>INIU B61 Power Bank 10000mAh, 3-Port Design.</description>
+  <title>3-USB-Power-Bank-Battery-Pack</title>
+  <tags>
+    <tag>Recharge</tag>
+    <tag>22.5W</tag>
+    <tag>USB</tag>
+    <tag>BATTERY</tag>
+  </tags>
+  <properties>
+    <property name="family">3-USB-Power-Bank-Battery-Pack</property>
+    <property name="variant">1</property>
+    <property name="layer"/>
+    <property name="mn"/>
+    <property name="mpn"/>
+    <property name="part number"/>
+  </properties>
+  <views>
+    <breadboardView>
+      <layers image="breadboard/3-USB-Power-Bank-Battery-Pack_1_breadboard.svg">
+        <layer layerId="breadboard"/>
+      </layers>
+    </breadboardView>
+    <schematicView>
+      <layers image="schematic/3-USB-Power-Bank-Battery-Pack_1_schematic.svg">
+        <layer layerId="schematic"/>
+      </layers>
+    </schematicView>
+    <pcbView>
+      <layers image="breadboard/3-USB-Power-Bank-Battery-Pack_1_breadboard.svg">
+        <layer layerId="breadboard"/>
+      </layers>
+    </pcbView>
+    <iconView>
+      <layers image="breadboard/3-USB-Power-Bank-Battery-Pack_1_breadboard.svg">
+        <layer layerId="icon"/>
+      </layers>
+    </iconView>
+  </views>
+  <connectors>
+    <connector id="connector0" name="5V+" type="male">
+      <description>5V+</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector0pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector0pin" terminalId="connector0terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+    <connector id="connector1" name="D+" type="male">
+      <description>D+</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector1pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector1pin" terminalId="connector1terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+    <connector id="connector2" name="D-" type="male">
+      <description>D-</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector2pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector2pin" terminalId="connector2terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+    <connector id="connector3" name="GND" type="male">
+      <description>GND</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector3pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector3pin" terminalId="connector3terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+    <connector id="connector4" name="5V+" type="male">
+      <description>5V+</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector4pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector4pin" terminalId="connector4terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+    <connector id="connector5" name="D+" type="male">
+      <description>D+</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector5pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector5pin" terminalId="connector5terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+    <connector id="connector6" name="D-" type="male">
+      <description>D-</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector6pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector6pin" terminalId="connector6terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+    <connector id="connector7" name="GND" type="male">
+      <description>GND</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector7pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector7pin" terminalId="connector7terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+    <connector id="connector8" name="5V+" type="male">
+      <description>5V+</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector8pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector8pin" terminalId="connector8terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+    <connector id="connector9" name="D+" type="male">
+      <description>D+</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector9pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector9pin" terminalId="connector9terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+    <connector id="connector10" name="D-" type="male">
+      <description>D-</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector10pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector10pin" terminalId="connector10terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+    <connector id="connector11" name="GND" type="male">
+      <description>GND</description>
+      <views>
+        <breadboardView>
+          <p layer="breadboard" svgId="connector11pin"/>
+        </breadboardView>
+        <schematicView>
+          <p layer="schematic" svgId="connector11pin" terminalId="connector11terminal"/>
+        </schematicView>
+      </views>
+    </connector>
+  </connectors>
+  <buses/>
+  <url>https://iniushop.com/en-ca/products/iniu-flash-pd-22-5w-10000mah-portable-charger</url>
+</module>
