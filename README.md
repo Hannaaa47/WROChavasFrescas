@@ -5,9 +5,6 @@
 
 <br>
 
-[![Website](https://img.shields.io/badge/Website-Visit-brightgreen?style=for-the-badge&logo=web&logoColor=white)](https://github.com/Hannaaa47/WROChavasFrescas) 
-[![Youtube](https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=Youtube&logoColor=white)](https://github.com/Hannaaa47/WROChavasFrescas)
-
 En este repositorio nuestro equipo "Chavas frescas" desglosaremos como logramos crear un robot para participar en la World Robot Olympiad en la categoria de Future Engineers.
 
 &nbsp;
@@ -88,8 +85,6 @@ Integrantes del equipo:
 - Hanna Alejandra Amador Sánchez
 - Ilse Marianne Castillo Pimienta
 - Yonatan Morales Togo
-
-
   
 &nbsp;
 
@@ -335,7 +330,87 @@ El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficien
 <br>
 
 ## Reporte de costos
-...
+<div align="left">
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Nombre</th>
+      <th align="center">Cantidad</th>
+      <th align="center">Costo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ESP32</td>
+      <td>1</td>
+      <td align="center">$200.00</td>
+    </tr>
+    <tr>
+      <td>Raspberry Pi 4 Model B</td>
+      <td>1</td>
+      <td align="center">$2100.00</td>
+    </tr>
+    <tr>
+      <td>Servomotor MG995 180°</td>
+      <td>1</td>
+      <td align="center">$155.00</td>
+    </tr>
+    <tr>
+      <td>Motor JGB37-520 DC 12v con encoder</td>
+      <td>1</td>
+      <td align="center">$258.00</td>
+    </tr>
+    <tr>
+      <td>Motor driver TB6612FNG</td>
+      <td>1</td>
+      <td align="center">$96.50</td>
+    </tr>
+    <tr>
+      <td>Cámara OV5647</td>
+      <td>1</td>
+      <td align="center">$160.00</td>
+    </tr>
+    <tr>
+      <td>Sensor Ultrasónico HC-SR04</td>
+      <td>3</td>
+      <td align="center">$49.00</td>
+    </tr>
+    <tr>
+      <td>6 Baterías 18650 3.7v 3000 mAh con cargador</td>
+      <td>1</td>
+      <td align="center">$493.05</td>
+    </tr>
+    <tr>
+      <td>LM2596 Regulador Step Down 25W 3A</td>
+      <td>1</td>
+      <td align="center">$60.00</td>
+    </tr>
+    <tr>
+    <tr>
+      <td>Botones</td>
+      <td>1</td>
+      <td align="center">$60.00</td>
+    </tr>
+    <tr>
+    <tr>
+      <td>Adaptador</td>
+      <td>1</td>
+      <td align="center">$40.00</td>
+    </tr>
+    <tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td></td>
+      <td align="center"><strong>$3646.50</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
++ impresion 3d y 
+otras cosas..
 
 &nbsp;
 
