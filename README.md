@@ -95,17 +95,23 @@ Integrantes del equipo:
 
 # Fotos del robot
 
-//foto de la derecha
+Foto de la derecha
+<img src="v-photos/derecha.jpg" height="400px" align="center">
 
-//foto de la izquierda
+Foto de la izquierda
+<img src="v-photos/izquierda.jpg" alt="banner" height="400px" align="center">
 
-//foto de arriba
+Foto de arriba
+<img src="v-photos/arriba.jpg" alt="banner" height="400px" align="center">
 
-//foto de abajo
+Foto de abajo
+<img src="v-photos/abajo.jpg" alt="banner" height="400px" align="center">
 
-//foto de enfrente
+Foto de enfrente
+<img src="v-photos/frente.jpg" alt="banner" height="400px" align="center">
 
-//foto de atras
+Foto de atras
+<img src="v-photos/atras.jpg" alt="banner" height="400px" align="center">
 
 &nbsp;  
 
@@ -279,27 +285,6 @@ En otras palabras el sensor ultrasónico nos permite saber con precision a que d
       <li>Voltaje: 3.3V ~ 5V</li>
       <li>Amperaje: 15mA </li>
       <li>Rango: 2cm ~ 400cm </li>
-      </li>
-    </td>
-  </tr>
-</table>
-  
-<br>
-  
-
-***IMU MPU6050 6 Grados de libertad***
-
-El MPU6050 es una unidad de medición inercial o IMU (Inertial Measurment Units) de 6 grados de libertad (DoF) que combina un acelerómetro de 3 ejes y un giroscopio de 3 ejes en un solo chip. Es ampliamente utilizado para medir la aceleración, la velocidad angular y la orientación de un objeto en movimiento. Nos ayuda a ubicarnos en el campo. Para más información revise el [datasheet](other/Datasheets/MPU-6000-Register-Map1.pdf).
-
-<table>
-  <tr>
-    <td width="400px" style="text-align: center;">
-      <img src="./other/img/IMU.jpg" alt="IMU" height=300px>
-    </td>
-    <td width="500px" style="text-align: left; vertical-align: center;">
-      <h3>Especificaciones:</h3>
-      <li>Voltaje: 3.3V ~ 5V</li>
-      <li>Amperaje: 3.9mA  </li>
       </li>
     </td>
   </tr>
