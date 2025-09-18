@@ -14,7 +14,6 @@ En este repositorio nuestro equipo "Chavas frescas" desglosaremos como logramos 
 * **[¿En que consiste la competencia?](#en-que-consiste-la-competencia)**
 * **[Equipo](#equipo)**
 * **[Fotos del robot](#fotos-del-robot)**
-* **[Videos del robot](#videos-del-robot)**
 * **[Hardware](#hardware)**
   * [Componentes](#componentes)
   * [Reporte de costos](#reporte-de-costos)
@@ -66,10 +65,10 @@ La World Robot Olympiad es una competencia mundial de robótica que busca una co
 En nuestro caso participamos en la categoría de Future Engineers, el objetivo es construir un vehículo autodirigido con algunas limitaciones(como peso, tamaño y número de motores), el cual debe de ser capaz de pasar dos pruebas.
 
 Prueba abierta.
-![Prueba abierta](research/FutureEngineers/PruebaAbierta.png)
+![Prueba abierta](other/img/PruebaAbierta.png)
 
 Prueba de obstáculos. 
-![Prueba de obstáculos](research/FutureEngineers/PruebaDeObstaculos.png)
+![Prueba de obstáculos](other/img/PruebaDeObstaculos.png)
 
 En la prueba abierta nuestro vehículo debe completar exitosamente tres vueltas a la pista. En la prueba de obstáculos además de dar tres vueltas a la pista el robot debe de ir esquivando obstáculos y al final estacionarse en paralelo. En ambas pruebas existen elementos aleatorios como la posición de los obstáculos y el sentido de las vueltas, estos elementos cambian después de cada ronda. Para conocer más puede leer las [reglas generales](https://wro-association.org/wp-content/uploads/WRO-2022-Future-Engineers-General-Rules.pdf) o visitar el [sitio oficial](https://wromexico.org/). 
 
@@ -90,36 +89,19 @@ Integrantes del equipo:
 
 # Fotos del robot
 
-Foto de la derecha
 <img src="v-photos/derecha.jpg" height="400px" align="center">
 
-Foto de la izquierda
 <img src="v-photos/izquierda.jpg" alt="banner" height="400px" align="center">
 
-Foto de arriba
 <img src="v-photos/arriba.jpg" alt="banner" height="400px" align="center">
 
-Foto de abajo
-<img src="v-photos/abajo.jpg" alt="banner" height="400px" align="center">
+<img src="v-photos/abajo2.jpg" alt="banner" height="400px" align="center">
 
-Foto de enfrente
 <img src="v-photos/frente.jpg" alt="banner" height="400px" align="center">
 
-Foto de atras
 <img src="v-photos/atras.jpg" alt="banner" height="400px" align="center">
 
 &nbsp;  
-
-# Videos del robot
-
-//video de la prueba abierta
-
-//video de la prueba de obstaculos
-
-
-Los vídeos de rendimiento deben demostrar el rendimiento del vehículo de principio a fin para cada desafío. Los vídeos pueden incluir comentarios, títulos o animaciones. El vídeo también puede incluir aspectos de las secciones 1(gestion de movilidad), 2(gestion de la potencia y los sentidos) o 3(gestion de obstaculos)
-
-&nbsp; 
 
 # Hardware
 
@@ -417,11 +399,11 @@ otras cosas..
 # Mobility Management
 
 ## Diseño del chasis
-Usamos solidworks para modelar el carro en 3d. Todos los modelos se pueden ver [aqui](models).
 
-Para moverse usamos Arckerman y mecanismo diferencial 
+Nuestro carro es de tracción trasera, funciona con un motor de 12 v que, con adaptador del motor a lego, transmite el movimiento a las llantas traseras. En la parte delantera para el sistema de giro optamos por un sistema sencillo, sin Ackermann. Adaptamos un soporte especial para la cámara, para el motor y para el servo. Los ultrasónicos los pegamos con plastiloka por facilidad.
 
-¿Como ensamblamos todo? 
+Para realizar el diseño del chasis tuvimos muchas complicaciones. Primero hicimos un primer prototipo con plástico y tapas de garrafón como llantas, nos sirvió para darnos una idea de cómo deberían de funcionar los ejes, pero era muy frágil. Nuestro siguiente prototipo fue con madera y tornillos, pero las medidas no eran muy precisas y adaptarlo exactamente a los componentes electrónicos iba a ser muy complicado. Por lo que pasamos a hacer un modelo 3D, para realizar este modelo usamos Solidworks, todos los modelos se encuentran en la carpeta de modelos. Pero al momento de imprimirlos en 3D no se pudieron imprimir bien los círculos en general, y el sistema de giro del carro era muy inestable. Por último, para solucionar lo del sistema de giro usamos legos y un engranaje modelado en 3D para que encaje correctamente con las demás piezas de lego.
+
 
 <br>
 
