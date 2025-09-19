@@ -25,16 +25,7 @@ En este repositorio nuestro equipo "Chavas frescas" desglosaremos como logramos 
   * [Esquema](#esquema) 
   * [Sensores](#sensores) 
 * **[Software](#software)**
-  * [Initialization and Connection Process](#-initialization-and-connection-process-) //
-  * [Object Management](#object-management)
-    *  [Object Detection](#object-detection--open-challenge--obstacle-challenge-) //
-    *  [Wall Detection/Management](#wall-detectionmanagement--open-challenge--obstacle-challenge-) //
-    *  [Signal Pillar Detection/Management](#signal-pillar-detectionmanagement--obstacle-challenge-) //
-    *  [Turning (Open Challenge)](#turning--open-challenge-) //
-    *  [Turning (Obstacle Challenge)](#turning--obstacle-challenge-) //
-    *  [Parking Lot Detection/Management](#parking-lot-detectionmanagement--obstacle-challenge-) //
-    *  [Three-Point Turn](#three-point-turn--obstacle-challenge-) //
-    *  [Backing Up](#backing-up--obstacle-challenge-) //
+  
 
 &nbsp;
 
@@ -76,9 +67,7 @@ En la prueba abierta nuestro vehículo debe completar exitosamente tres vueltas 
 
 # Equipo
 
-//foto de todos juntos
-
-//descripcion y foto individual de cada uno
+<img src="foto del equipo" height="400px" align="center">
 
 Integrantes del equipo:
 - Hanna Alejandra Amador Sánchez
@@ -400,35 +389,28 @@ otras cosas..
 
 ## Diseño del chasis
 
-Nuestro carro es de tracción trasera, funciona con un motor de 12 v que, con adaptador del motor a lego, transmite el movimiento a las llantas traseras. En la parte delantera para el sistema de giro optamos por un sistema sencillo, sin Ackermann. Adaptamos un soporte especial para la cámara, para el motor y para el servo. Los ultrasónicos los pegamos con plastiloka por facilidad.
+Nuestro carro es de tracción trasera, funciona con un motor de 12v que, con adaptador del motor a lego, transmite el movimiento a las llantas traseras. En la parte delantera para el sistema de giro optamos por un sistema sencillo, sin Ackermann. Adaptamos un soporte especial para la cámara, para el motor y para el servo. Los ultrasónicos los pegamos con plastiloka por facilidad.
 
-Para realizar el diseño del chasis tuvimos muchas complicaciones. Primero hicimos un primer prototipo con plástico y tapas de garrafón como llantas, nos sirvió para darnos una idea de cómo deberían de funcionar los ejes, pero era muy frágil. Nuestro siguiente prototipo fue con madera y tornillos, pero las medidas no eran muy precisas y adaptarlo exactamente a los componentes electrónicos iba a ser muy complicado. Por lo que pasamos a hacer un modelo 3D, para realizar este modelo usamos Solidworks, todos los modelos se encuentran en la carpeta de modelos. Pero al momento de imprimirlos en 3D no se pudieron imprimir bien los círculos en general, y el sistema de giro del carro era muy inestable. Por último, para solucionar lo del sistema de giro usamos legos y un engranaje modelado en 3D para que encaje correctamente con las demás piezas de lego.
-
+Para realizar el diseño del chasis tuvimos muchas complicaciones. Primero hicimos un primer prototipo con plástico y tapas de garrafón como llantas, nos sirvió para darnos una idea de cómo deberían de funcionar los ejes, pero era muy frágil. Nuestro siguiente prototipo fue con madera y tornillos, pero las medidas no eran muy precisas y adaptarlo exactamente a los componentes electrónicos iba a ser muy complicado. Por lo que pasamos a hacer un modelo 3D, para realizar este modelo usamos Solidworks, todos los modelos se encuentran en la carpeta de [modelos](models). Pero al momento de imprimirlos en 3D no se pudieron imprimir bien los círculos en general, y el sistema de giro del carro era muy inestable. Por último, para solucionar lo del sistema de giro usamos legos y un engranaje modelado en 3D para que encaje correctamente con las demás piezas de lego.
 
 <br>
 
 ## Eleccion de motores 
-Las dimensiones maximas de nuestro robot son de 30x20x30 cm y 1.5 kg, basandonos en eso elegimos nuestros componentes
+Las dimensiones maximas de nuestro robot son de 30x20x30 cm y 1.5 kg, basandonos en eso elegimos nuestros componentes, intentamos usar los motores basicos, como el motor amarillo y el servo chico normal, pero no tenian el suficiente poder.
 
 **Motor JGB37-520 DC 12v** 
 
-hablar sobre velocidad, torque y poder 
+Este motor cuentan con un Torque: 6.5kg.cm (120mA) - 9kg.cm (2300mA), lo que es mas que suficiente para poder mover el robot. El robot pesa 1.3kg, muy por debajo del minimo de peso que este motor puede mover, gracias a esto obtenemos bastante poder de movimiento. 
+Anteriormente se intento con un motorreductor, que tiene un torque de salida de 1.1kg a 5 volts, algo que es insuficiente para poder mover el peso del robot anteriormente mencionado de 1.3 kg. 
 
 **Motor driver TB6612FNG**
 
-eficiencia 
+Se escogio este motor driver, porque al hacer una investigacion, se concluyo que es mejor que el motor driver l298n, porque este pierde energia, haciendo quno sea tan eficiente Como llega a ser con el TB6612FNG. 
+Ademas que es mucho mas compacto que el l298n, ocupando menor espacio.
 
 **Servomotor MG995 180°** 
-
-torque
-
-blah blah
-
-Para el 100 -> Exceeds expectations: Not only can an exact duplication be made from the information provided, but information on improvements is also provided.
-
-Mobility Management 
-Mobility management discussion should cover how the vehicle movements are managed. What motors are selected, how they are selected and implemented. A brief discussion regarding the vehicle chassis design /selection can be provided as well as the mounting of all components to the vehicle chassis/structure. The discussion may include engineering principles such as speed, torque, power etc. usage. Building or assembly instructions can be provided together with 3D CAD files to 3D print parts.
-
+ 
+Porque su torque es de 9.4kg por cm, esto siendo mas que suficiente para su movimiento, ya que el peso del robot es de 1.3kg. Se uso anteriormente un micro servo, pero no fuel suficientemente fuerte para mover el mecanismo.
 
 &nbsp;
 
@@ -436,73 +418,32 @@ Mobility management discussion should cover how the vehicle movements are manage
 
 ## Voltaje y amperaje
 
-<br>
+Para encender todo, se tiene que encender el switch que esta conectado a la pila portatil, encendiendo el raspberry. La pila portatil da 5V y3A al raspberry. Y con la salida del raspberry de 5V, alimenta al ESP32. El ESP32 tiene un relay  con su bobina conectada para energizarse. Este relay, esta abierto con el comun conectado a las 3 pilas de 4V, dando 12V en serie. La senal esta conectada a tierra, que en el momento en que se energiza el raspberry, luego el ESP32, ya se cierra el circuito y da tierra al relay, cerrando su circuito, dejando pasar la energia de las 3 pilas. Estas 3 pilas energizan al motor de 12V, y ademas, esta conectado a un step down que baja el voltaje a 5V, conectando el servo y los ultrasonicos. Asi se queda energizado todo con un solo switch.
 
 ## Esquema  
-Energía
-* 3 pilas 18650 en serie (12v)
-	* Motor JGB37-520 DC 12v
-	* LM2596 Regulador Step Down (pasa de 12v a 5v)
-		* Servomotor MG995 180°
-		* Sensor Ultrasónico HC-SR04
-* Batería Portátil (5v 3A)
-	* Raspberry Pi 4 Model B (alimenta al esp32 por cable usb a usbc)
-		* Esp32 (tiene una salida de voltaje de 3.3v)
-			* Motor driver TB6612FNG
-			* IMU MPU6050
-			* Encoder
-      * Botones
 
-
-Control
-* Raspberry pi 
-  * Servomotor
-  * Camara
-  * Esp32
-    * Motor driver
-    * Botones
-    * IMU
-    * Ultrasonico
-    * Encoder
+Creamos un diagrama del circuito en fritzing.
+<img src="schemes/prueba2_bb.png" height="400px" align="center">
 
 <br>
 
 ## Sensores 
-  + camara
-  + ultrasonico 
-  +imu 
 
-VISUAL INERTIAL ODOMETRY
-fusionar camara y imu para localizar el carro en el espacio 
+***Sensor Ultrasónico HC-SR04***
+Este sensor lo estamos usando para saber a que distancia esta la pared, para que el robot reaccione de manera en que no choque. 
+Los sensores ultrasónicos funcionan emitiendo ondas sonoras de alta frecuencia (más de 20 kHz) mediante un transductor piezoeléctrico. Estas ondas se reflejan al chocar con un objeto y regresan al sensor. El sensor mide el tiempo que tarda el eco en volver y calcula la distancia al objeto usando la fórmula:
 
-blah blah
+Distancia = (T × C) / 2,
+donde T es el tiempo y C la velocidad del sonido. La división entre dos se debe a que el tiempo incluye el recorrido de ida y vuelta.
 
-Para el 100 -> Exceeds expectations: Not only can an exact duplication be made from the information provided, but information on improvements is also provided.
-
-Power and Sense 
-Management Power and Sense management discussion should cover the power source for the vehicle as well as the sensors required to provide the vehicle with information to negotiate the different challenges. The discussion can include the reasons for selecting various sensors and how they are being used on the vehicle together with power consumption. The discussion could include a wiring diagram with BOM 
-
+***Cámara***
+La usamos para poder detectar los obstaculos y su color. Esta hecha para su uso en el raspberry.
 
 &nbsp;
 
 # Software
-Para el desarrollo de software programamos el esp32 con arduino ide en c++ y programamos el raspberry pi en python
-  
-
-blah blah
-
-<br>
-
-## Obstacle Management
-
-Usamos la camara con la libreria de python opencv
-
-Para el 100 -> Exceeds expectations: Not only can an exact duplication be made from the information provided, but information on improvements is also provided.
-
-Obstacle Management 
-Obstacle management discussion should include the strategy for the vehicle to negotiate the obstacle course for all the challenges. This could include flow diagrams, pseudo code and source code with detailed comments
-
-blah blah
+Para el desarrollo de software programamos el Esp32 con arduino ide en c++ y ademas usamos un raspberry pi con programación en en python.
+Para crear el codigo desarrollamos un programa en el cual el Esp32 lleva la logica principal del programa por su velocidad de lectura de los sensores, y el raspberry pi solo se encarga de obedecer las instrucciones del otro microcontrolador.
 
 &nbsp;
 
