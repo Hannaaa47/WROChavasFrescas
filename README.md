@@ -41,10 +41,6 @@ En este repositorio nuestro equipo "Chavas frescas" desglosaremos como logramos 
 
 *  [`v-photos`](v-photos) — contiene seis fotos del carrito.
 
-*  [`research`](research) — una seccion dedicada a temas que investigamos en el proceso de crear el robot.
-
-*  [`video`](video) — contiene un archivo markdown con los links de los videos demostrativos de nuestro robot.
-
 *  [`other`](other) — contiene imagenes y archivos que ayudan a entender más a fondo como preparar el robot para la competencia, contiene datasheets y imagenes de los componentes.
 
 &nbsp;
@@ -430,6 +426,7 @@ Creamos un diagrama del circuito en fritzing.
 ## Sensores 
 
 ***Sensor Ultrasónico HC-SR04***
+
 Este sensor lo estamos usando para saber a que distancia esta la pared, para que el robot reaccione de manera en que no choque. 
 Los sensores ultrasónicos funcionan emitiendo ondas sonoras de alta frecuencia (más de 20 kHz) mediante un transductor piezoeléctrico. Estas ondas se reflejan al chocar con un objeto y regresan al sensor. El sensor mide el tiempo que tarda el eco en volver y calcula la distancia al objeto usando la fórmula:
 
@@ -437,6 +434,7 @@ Distancia = (T × C) / 2,
 donde T es el tiempo y C la velocidad del sonido. La división entre dos se debe a que el tiempo incluye el recorrido de ida y vuelta.
 
 ***Cámara***
+
 La usamos para poder detectar los obstaculos y su color. Esta hecha para su uso en el raspberry.
 
 &nbsp;
