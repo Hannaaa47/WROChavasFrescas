@@ -63,7 +63,7 @@ En la prueba abierta nuestro vehículo debe completar exitosamente tres vueltas 
 
 # Equipo
 
-<img src="foto del equipo" height="400px" align="center">
+<img src="t-photos/team photo.jpg" height="400px" align="center">
 
 Integrantes del equipo:
 - Hanna Alejandra Amador Sánchez
