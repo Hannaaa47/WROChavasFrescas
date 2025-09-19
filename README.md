@@ -373,7 +373,7 @@ El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficien
     <tr>
       <td><strong>Total</strong></td>
       <td></td>
-      <td align="center"><strong>$3646.50</strong></td>
+      <td align="center"><strong>$3671.5</strong></td>
     </tr>
   </tbody>
 </table>
