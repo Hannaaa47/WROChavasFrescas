@@ -14,6 +14,7 @@ En este repositorio nuestro equipo "Chavas frescas" desglosaremos como logramos 
 * **[¿En que consiste la competencia?](#en-que-consiste-la-competencia)**
 * **[Equipo](#equipo)**
 * **[Fotos del robot](#fotos-del-robot)**
+* **[Videos del robot](#videos-del-robot)**
 * **[Hardware](#hardware)**
   * [Componentes](#componentes)
   * [Reporte de costos](#reporte-de-costos)
