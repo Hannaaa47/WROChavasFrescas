@@ -442,6 +442,8 @@ La usamos para poder detectar los obstaculos y su color. Esta hecha para su uso 
 
 &nbsp;
 
+##Software
+
 Para el desarrollo de software programamos el Esp32 con Arduino Ide en C++, ademas usamos un Raspberry pi con programación en en python.
 Para crear el codigo desarrollamos un programa en el cual el Esp32 lleva la logica principal del programa por su velocidad de lectura de los sensores, y el Raspberry pi solo se encarga de obedecer las instrucciones del otro microcontrolador. 
 Usamos un filtro para las lecturas de los ultrasonicos y gravias a ellos detectamos las paredes. Ademas creamos uns state mechine para que fuera mas fail para el Esp32 llevar las cosas y que no se atrase.
