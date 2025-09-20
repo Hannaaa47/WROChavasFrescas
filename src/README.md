@@ -1,6 +1,4 @@
-Control software
+Control del software
 ====
 
-This directory must contain code for control software which is used by the vehicle to participate in the competition and which was developed by the participants.
-
-All artifacts required to resolve dependencies and build the project must be included in this directory as well.
+Este repositorio contiene todo el codigo necesario para hacer a nuestro robot funncionar, contando con un apartado para el Esp32 y otro para el Raspberry pi.

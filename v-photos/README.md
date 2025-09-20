@@ -1,4 +1,4 @@
-Vehicle's photos
+Fotos del vehiculo 
 ====
 
-This directory must contain 6 photos of the vehicle (from every side, from top and bottom)
+Esta carpeta contiene una foto del robot desde 6 vistas diferentes; arriba, abajo, izquierda, derecha, enfrete y atras.

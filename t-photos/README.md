@@ -1,4 +1,4 @@
-Team's photos
+Fotos del equipo
 ====
 
-This directory must contain 2 photos of the team (an official one and one funny photo with all team members)
+Esta carpeta contiene dos imganes del equipo, una foto oficial y otra chistosa con nuestro amuleto de la suerte.

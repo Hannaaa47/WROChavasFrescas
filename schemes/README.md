@@ -1,4 +1,4 @@
-Electromechanical diagrams
+Diagramas electricos
 ====
 
-This directory must contain one or several schematic diagrams in form of JPEG, PNG or PDF of the electromechanical components illustrating all the elements (electronic components and motors) used in the vehicle and how they connect to each other.
+En este repositorio se puede consultar un diagrama electrico de nuestro circuito, ademas de los archivos necesarios para abrirlo en el fritzing.
