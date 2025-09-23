@@ -139,9 +139,10 @@ Hace la función del cerebro principal del robot, esta a cargo de la computer vi
     </td>
     <td style="width:500px; text-align:left; vertical-align:middle;">
       <h3>Especificaciones:</h3>
-      <li>Voltaje: 5V</li>
-      <li>Amperaje: 2500mA ~ 3000mA </li>
-      </li>
+      <ul>
+        <li>Voltaje: 5V</li>
+        <li>Amperaje: 2500mA ~ 3000mA </li>
+      </ul>
     </td>
   </tr>
 </table>
@@ -161,10 +162,11 @@ Usamos este servomotor para controlar la dirección del carro, decidimos usar es
     </td>
     <td style="width:500px; text-align:left; vertical-align:middle;">
       <h3>Especificaciones:</h3>
-      <li>Voltaje:  4.8V - 7.2V</li>
-      <li>Amperaje: 200mA ~ 1200mA </li>
-      <li>Torque: 9.4kg/cm (4.8V) - 11kg/cm (6V)</li>
-      </li>
+      <ul>
+        <li>Voltaje:  4.8V - 7.2V</li>
+        <li>Amperaje: 200mA ~ 1200mA </li>
+        <li>Torque: 9.4kg/cm (4.8V) - 11kg/cm (6V)</li>
+      </ul>
     </td>
   </tr>
 </table>
@@ -189,12 +191,13 @@ Este motor tambien cuenta con un encoder, el encoder nos ayuda a monitorear las 
     </td>
     <td style="width:500px; text-align:left; vertical-align:middle;">
       <h3>Especificaciones:</h3>
-      <li>Voltaje:  12V</li>
-      <li>Amperaje: 120mA ~ 2300mA </li>
-      <li>Torque: 6.5kg.cm (120mA) - 9kg.cm (2300mA)</li>
-      <h3>Encoder</h3>
-      <li>Voltaje: 3.3V</li>
-      </li>
+      <ul>
+        <li>Voltaje:  12V</li>
+        <li>Amperaje: 120mA ~ 2300mA </li>
+        <li>Torque: 6.5kg.cm (120mA) - 9kg.cm (2300mA)</li>
+        <h3>Encoder</h3>
+        <li>Voltaje: 3.3V</li>
+      </ul>
     </td>
   </tr>
 </table>
@@ -215,10 +218,11 @@ Elegimos este motor driver debido a su gran eficiencia energética, su tamaño c
     </td>
     <td style="width:500px; text-align:left; vertical-align:middle;">
       <h3>Especificaciones:</h3>
-      <li>Voltaje lógico (VCC): 2.7V - 5.5V</li>
-      <li>Voltaje de motor (VM): 4.5V - 13.5V</li>
-      <li>Corriente máxima por motor: 1.2A continuos / 3.2A pico</li>
-      </li>
+      <ul>
+        <li>Voltaje lógico (VCC): 2.7V - 5.5V</li>
+        <li>Voltaje de motor (VM): 4.5V - 13.5V</li>
+        <li>Corriente máxima por motor: 1.2A continuos / 3.2A pico</li>
+      </ul>
     </td>
   </tr>
 </table>
@@ -236,9 +240,10 @@ Usamos una mini cámara gran angular, esta se conecta directamente al raspberry.
     </td>
     <td style="width:500px; text-align:left; vertical-align:middle;">
       <h3>Especificaciones:</h3>
-      <li>Video: 1080p a 30fps</li>
-      <li>Campo de visión: 2.0 x 1.33 m a 2 m</li>
-      </li>
+      <ul>
+        <li>Video: 1080p a 30fps</li>
+        <li>Campo de visión: 2.0 x 1.33 m a 2 m</li>
+      </ul>
     </td>
   </tr>
 </table>
@@ -257,10 +262,11 @@ En otras palabras el sensor ultrasónico nos permite saber con precision a que d
     </td>
     <td style="width:500px; text-align:left; vertical-align:middle;">
       <h3>Especificaciones:</h3>
-      <li>Voltaje: 3.3V ~ 5V</li>
-      <li>Amperaje: 15mA </li>
-      <li>Rango: 2cm ~ 400cm </li>
-      </li>
+      <ul>
+        <li>Voltaje: 3.3V ~ 5V</li>
+        <li>Amperaje: 15mA </li>
+        <li>Rango: 2cm ~ 400cm </li>
+      </ul>
     </td>
   </tr>
 </table>
@@ -278,10 +284,11 @@ La pila 18650 es una batería recargable Li-ion, que se parece mucho a la pila t
     </td>
     <<td style="width:500px; text-align:left; vertical-align:middle;">
       <h3>Especificaciones:</h3>
-      <li>Voltaje: 3.7V</li>
-      <li>Amperaje: 3000mA  </li>
-      <li>Ciclos de vida: 300–500 ciclos </li>
-      </li>
+      <ul>
+        <li>Voltaje: 3.7V</li>
+        <li>Amperaje: 3000mA  </li>
+        <li>Ciclos de vida: 300–500 ciclos </li>
+      </ul>
     </td>
   </tr>
 </table>
@@ -299,10 +306,11 @@ El LM2596 es un Regulador Step Down de 25W y 3A que ofrece una solución eficien
     </td>
     <td style="width:500px; text-align:left; vertical-align:middle;">
       <h3>Especificaciones:</h3>
-      <li>Voltaje de entrada: 4V-35V</li>
-      <li>Voltaje de salida: 2V-30V </li>
-      <li>Corriente de salida máxima: 3A</li>
-      </li>
+      <ul>
+        <li>Voltaje de entrada: 4V-35V</li>
+        <li>Voltaje de salida: 2V-30V </li>
+        <li>Corriente de salida máxima: 3A</li>
+      </ul>
     </td>
   </tr>
 </table>
