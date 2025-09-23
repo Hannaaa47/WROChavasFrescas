@@ -110,17 +110,19 @@ Es un Single Board Microcontroller (SBM), es un sistema en chip (SoC) económico
 Su función en nuestro proyecto es hacer de motor controller y obtener lecturas precisas de los sensores, dada a la rápida comunicación que tiene entre componentes. Elegimos al Esp32 sobre la opción clásica que sería algún arduino, ya que después de analizar ambos llegamos a la conclusión que el Esp32 es mejor. 
 <table>
   <tr>
-    <td width="400px" style="text-align: center;">
-      <img src="./other/img/ESP32.jpg" alt="ESP32" height=300px>
+    <td style="width:400px; text-align:center; vertical-align:middle;">
+      <img src="./other/img/ESP32.jpg" alt="ESP32" height="300px">
     </td>
-    <td width="500px" style="text-align: left; vertical-align: center;">
+    <td style="width:500px; text-align:left; vertical-align:middle;">
       <h3>Especificaciones:</h3>
-      <li>Voltaje: 2.3V ~ 3.6V</li>
-      <li>Amperaje: 80mA ~ 250mA </li>
-      </li>
+      <ul>
+        <li>Voltaje: 2.3V ~ 3.6V</li>
+        <li>Amperaje: 80mA ~ 250mA</li>
+      </ul>
     </td>
   </tr>
 </table>
+
 
 <br>
 
